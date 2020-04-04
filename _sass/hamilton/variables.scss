@@ -1,0 +1,15 @@
+// Fonts
+$base-font-family:  "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !default;
+$title-font-family: "Brush Script MT", $base-font-family !default;
+$reading-font-family: "Georgia", $base-font-family !default;
+$code-font-family:  "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+$base-font-size:    18px !default;
+$base-line-height:  1.4 !default;
+
+// Layouts
+$spacing-unit:      2rem !default;
+$content-width:     840px !default;
+
+$on-small:          500px !default;
+$on-medium:         700px !default;
+$on-large:          840px !default;

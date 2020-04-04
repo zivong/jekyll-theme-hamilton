@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+body {
+  color: $text-color;
+  background-color: $background-color;
+}
+
+a {
+  color: $link-base-color;
+
+  &:visited {
+    color: $link-visited-color;
+  }
+
+  &:hover {
+    color: $text-color;
+  }
+}
+
+blockquote {
+  color: $text-color-light;
+  border-left-color: $border-color;
+}
+
+pre,
+code {
+  background-color: $code-background-color;
+}
+
+pre {
+  border-color: $border-color-light;
+}
+
+.highlight {
+  background: $code-background-color;
+
+  .highlighter-rouge & {
+    background: $code-background-color;
+  }
+}
+
+table {
+  color: $table-text-color;
+  border-color: $table-border-color;
+
+  tr {
+    &:nth-child(even) {
+      background-color: $table-zebra-color;
+    }
+  }
+
+  th {
+    background-color: $table-header-bg-color;
+    border-color: $table-header-border;
+  }
+
+  td {
+    border-color: $table-border-color;
+  }
+}
+
+
+///////// Layout ///////////
+
+.site-header {
+  border-top-color: $border-color-dark;
+  border-bottom-color: $border-color-light;
+}
+
+.site-title {
+  color: $text-color;
+  
+  &:visited {
+    color: $text-color;
+  }
+}
+
+.site-nav {
+  background-color: $background-color;
+  border-color: $border-color;
+
+  .menu-icon {
+    > svg path {
+      fill: $border-color-dark;
+    }
+  }
+
+  .page-link {
+    color: $text-color;
+  }
+}
+
+.post-list {
+  li {
+    border-bottom-color: $border-color-light;
+  }
+}
+
+.post-link {
+  color: $text-color;
+
+  &:visited {
+    color: $text-color;
+  }
+}
+
+.post-header {
+  background-color: $border-color-light;
+}
+
+.post-meta {
+  color: $text-color-light;
+}
+
+.pagination {
+  li {
+    a, div {
+      border-color: $border-color-light;
+    }
+
+    div.pager-edge {
+      border: 1px dashed $border-color-light;
+    }
+
+    a.previous-page, a.next-page {
+      &:hover {
+        border-color: $border-color;
+      }
+    }
+  }
+}
+
+.taxonomy-count {
+  color: $text-color-light;
+}
+
+.site-footer {
+  color: $text-color-light;
+  border-top-color: $border-color-light;
+}
+
+.feed-subscribe {
+  a {
+    color: $subscribe-color;
+  }
+}

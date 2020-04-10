@@ -1,9 +1,16 @@
 {% capture align %}align-{{ include.align | default: "center" }}{% endcapture %}
+
+{%- if include.src -%}
+  {% assign src = include.src %}
+{%- elsif include.name -%}
+  {% capture src %}assets/img/{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
+{%- endif -%}
+
 {% if include.caption %}
 <figure class="{{ align }}">
-  <img class="{{ align }}" src="{{ include.src | absolute_url }}" alt="{{ include.caption }}" {% if include.width %}width="{{ include.width }}"{% endif %} {% if include.height %}height="{{ include.height }}"{% endif %}/>
+  <img class="{{ align }}" src="{{ src | absolute_url }}" alt="{{ include.caption }}" {% if include.width %}width="{{ include.width }}"{% endif %} {% if include.height %}height="{{ include.height }}"{% endif %}/>
   <figcaption class="{{ align }}">{{ include.caption }}</figcaption>
 </figure>
 {% else %}
-<img class="{{ align }}" src="{{ include.src | absolute_url }}" alt="{{ include.alt }}" {% if include.width %}width="{{ include.width }}"{% endif %} {% if include.height %}height="{{ include.height }}"{% endif %}/>
+<img class="{{ align }}" src="{{ src | absolute_url }}" alt="{{ include.alt }}" {% if include.width %}width="{{ include.width }}"{% endif %} {% if include.height %}height="{{ include.height }}"{% endif %}/>
 {% endif %}

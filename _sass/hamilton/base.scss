@@ -100,8 +100,8 @@ a {
  * Blockquotes
  */
 blockquote {
-  border-left: 0.3em solid;
-  padding: $spacing-unit;
+  border-left: 0.1em solid;
+  padding-left: $spacing-unit;
   font-style: italic;
 
   > :last-child {

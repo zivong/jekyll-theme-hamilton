@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-hamilton"
   spec.version       = "0.2.0"
   spec.authors       = ["Shangzhi Huang"]
-  spec.email         = ["ngzhio@protonmail.com"]
+  spec.email         = ["ngzhio@gmail.com"]
 
   spec.summary       = "Another minimal style of Jekyll theme for writers"
   spec.homepage      = "https://github.com/ngzhio/jekyll-theme-hamilton"

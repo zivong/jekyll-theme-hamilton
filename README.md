@@ -4,7 +4,9 @@ Another minimal style of Jekyll theme for writers. The original purpose of this 
 
 Please check out the [demo](https://ngzhio.github.io/jekyll-theme-hamilton/).
 
-![screenshot](screenshot.png)
+| Daylight | Sunrise/Sunset | Midnight |
+| --- | --- | --- |
+| ![screenshot](screenshot.png) | ![screenshot](screenshot-sunrise.png) | ![screenshot](screenshot-midnight.png)
 
 ## Features <!-- omit in toc -->
 

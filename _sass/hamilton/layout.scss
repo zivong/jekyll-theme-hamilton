@@ -143,7 +143,7 @@
   @include relative-font-size(2);
 
   @media screen and (min-width: $on-large) {
-    @include relative-font-size(2.236);
+    @include relative-font-size(2.5);
   }
 }
 
@@ -198,8 +198,8 @@
   margin-right: $spacing-unit / 2;
 }
 
-// Formula of calculating the relative font size of hn: 1 + 2 * 0.618^n
 
+// About font sizes for h1-h6, refer to https://stackoverflow.com/a/6140504/13261366
 .post-title,
 .post-content h1 {
   @include relative-font-size(2);
@@ -208,7 +208,7 @@
   line-height: $base-line-height * $base-font-size * 2;
 
   @media screen and (min-width: $on-large) {
-    @include relative-font-size(2.236);
+    @include relative-font-size(2.5);
   }
 }
 
@@ -221,31 +221,31 @@
   h5, h6 { margin-top: $spacing-unit }
 
   h2 {
-    @include relative-font-size(1.6);
+    @include relative-font-size(1.5);
 
     @media screen and (min-width: $on-large) {
-      @include relative-font-size(1.764);
+      @include relative-font-size(1.55);
     }
   }
 
   h3 {
-    @include relative-font-size(1.4);
+    @include relative-font-size(1.17);
 
     @media screen and (min-width: $on-large) {
-      @include relative-font-size(1.472);
+      @include relative-font-size(1.175);
     }
   }
 
   h4 {
-    @include relative-font-size(1.292);
+    @include relative-font-size(1.12);
   }
 
   h5 {
-    @include relative-font-size(1.18);
+    @include relative-font-size(0.83);
   }
 
   h6 {
-    @include relative-font-size(1.111);
+    @include relative-font-size(0.75);
   }
 }
 

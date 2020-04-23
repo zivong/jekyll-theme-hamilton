@@ -26,8 +26,8 @@ layout: default
           </a>
         </h3>
         <span class="post-meta">{{ post.date | date: date_format }}</span>
-        {%- if page.show_excerpts != false -%}
-          <p>{{ post.excerpt }}</p>
+        {%- if post.show_excerpts != false -%}
+          <div class="post-excerpt">{{ post.excerpt }}</div>
         {%- endif -%}
       </li>
       {%- endfor -%}

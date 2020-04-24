@@ -121,14 +121,6 @@
   margin-top: $spacing-unit;
 }
 
-.post-list-heading {
-  @include relative-font-size(1.5);
-
-  @media screen and (min-width: $on-large) {
-    @include relative-font-size(1.55);
-  }
-}
-
 .post-list {
   margin-left: 0;
   padding-left: 0;
@@ -140,7 +132,7 @@
     border-bottom: 1px solid;
     margin-bottom: $spacing-unit;
 
-    h3 {
+    h2 {
       margin-bottom: 0;
     }
 
@@ -155,10 +147,10 @@
 }
 
 .post-link {
-  @include relative-font-size(1.17);
+  @include relative-font-size(1.5);
 
   @media screen and (min-width: $on-large) {
-    @include relative-font-size(1.175);
+    @include relative-font-size(1.55);
   }
 }
 

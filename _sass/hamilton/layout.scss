@@ -202,8 +202,14 @@
   margin-bottom: $spacing-unit / 2;
 }
 
-.post-tag {
-  margin-right: $spacing-unit / 2;
+.post-tags {
+  .post-tag {
+    margin-right: $spacing-unit / 2;
+  }
+  
+  > :last-child {
+    margin-right: 0;
+  }
 }
 
 

@@ -344,23 +344,52 @@ figcaption.align-center {
 .site-footer {
   border-top: 1px solid;
   padding: $spacing-unit 0;
-  text-align: center;
   @include relative-font-size(0.8);
 
-  .feed-subscribe {
-    font-weight: bold;
-    text-align: left;
-    .feed-icon {
-      margin-right: 0.3em;
-    }
+  p {
+    margin-bottom: $spacing-unit / 4;
+  }
+}
+
+@media screen and (min-width: $on-medium) {
+  .footer-col-wrapper {
+    display: flex
   }
 
+  .footer-col {
+    width: calc(100% - (#{$spacing-unit} / 2));
+    padding: 0 ($spacing-unit / 2);
 
-  .social-icons {
-    margin-bottom: $spacing-unit;
-
-    .social-icon {
-      margin: 0.3em;
+    &:first-child {
+      padding-right: $spacing-unit / 2;
+      padding-left: 0;
     }
+
+    &:last-child {
+      padding-right: 0;
+      padding-left: $spacing-unit / 2;
+    }
+  }
+}
+
+.feed-subscribe {
+  font-weight: bold;
+  text-align: left;
+  .feed-icon {
+    margin-right: 0.3em;
+  }
+}
+
+.contact-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: $spacing-unit / 2;
+
+  .social-icon {
+    margin: 0.3em;
   }
 }

@@ -1,10 +1,46 @@
 <footer id="footer" class="site-footer">
   <div class="wrapper">
-    <p class="feed-subscribe">
-      <a href="{{ 'feed.xml' | relative_url }}">
-        <i class="feed-icon fas fa-rss"></i><span>Subscribe</span>
-      </a>
-    </p>
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="{{ 'feed.xml' | relative_url }}">
+            <i class="feed-icon fas fa-rss"></i><span>Subscribe</span>
+          </a>
+        </p>
+        <ul class="contact-list">
+          {%- if site.author -%}
+            <li class="p-name">{{ site.author | escape }}</li>
+          {%- endif -%}
+          {%- if site.email -%}
+            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          {%- endif -%}
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="copyright">
+          {% assign year_from = site.posts[-1].date | date: '%Y' %}
+          {% assign year_to   = site.time | date: '%Y' %}
+          {% if year_from == nil or year_from == year_to %}
+            {% assign year_string = year_from %}
+          {% else %}
+            {% assign year_string = year_from | append: '&nbsp;' | append: '-' | append: '&nbsp;' | append: year_to %}
+          {% endif %}
+          {% if site.author %}
+            <p>© {{ year_string }} {{ site.author }}; All rights reserved</p>
+          {% endif %}
+        </div>
+        <p>
+          Powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://github.com/ngzhio/jekyll-theme-hamilton">Hamilton</a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <p>{{ site.description | escape }}</p>
+      </div>
+
+    </div>
 
     {% if site.data.social %}
       <div class="social-icons">
@@ -13,29 +49,6 @@
         {% endfor %}
       </div>
     {% endif %}
-
-    <div class="copyright">
-      {% assign year_from = site.posts[-1].date | date: '%Y' %}
-      {% assign year_to   = site.time | date: '%Y' %}
-      {% if year_from == nil or year_from == year_to %}
-        {% assign year_string = year_from %}
-      {% else %}
-        {% assign year_string = year_from | append: '&nbsp;' | append: '-' | append: '&nbsp;' | append: year_to %}
-      {% endif %}
-
-      {% if site.author %}
-        {% if site.email %}
-          <p>© {{ year_string }} <a class="u-email" href="mailto:{{ site.email }}">{{ site.author }}</a>; All rights reserved.</p>
-        {% else %}
-          <p>© {{ year_string }} {{ site.author }}; All rights reserved.</p>
-        {% endif %}
-      {% endif %}
-
-      <p>
-        Powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://github.com/ngzhio/jekyll-theme-hamilton">Hamilton</a>
-      </p>
-
-    </div>
   </div>
 </footer>
   

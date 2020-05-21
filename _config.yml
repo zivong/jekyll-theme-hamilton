@@ -1,6 +1,7 @@
 title: Hamilton
 description: Another minimal style of Jekyll theme for writers
 author: Shangzhi Huang
+email: ngzhio@gmail.com
 
 plugins:
   - jekyll-seo-tag

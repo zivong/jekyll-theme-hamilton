@@ -346,7 +346,7 @@ figcaption.align-center {
   padding: $spacing-unit 0;
   @include relative-font-size(0.8);
 
-  p {
+  p, ul {
     margin-bottom: $spacing-unit / 4;
   }
 }

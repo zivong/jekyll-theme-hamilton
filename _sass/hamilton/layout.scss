@@ -293,7 +293,6 @@
 .post-list-by-taxonomy {
   time {
     font-family: $code-font-family;
-    @include relative-font-size(0.9);
   }
 }
 

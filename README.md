@@ -156,6 +156,23 @@ You can create a file `_data/navigation.yml` to configure links to some pages. F
   url: /tags/
 ```
 
+The navigation bar also supports dropdown submenus:
+
+```yml
+- title: About
+  url: /about/
+- title: Categories
+  url: /categories/
+- title: Tags
+  url: /tags/
+- title: More
+  sublinks:
+    - title: FAQ
+      url: /faq/
+    - title: Docs
+      url: /docs/
+```
+
 ### Social Media
 
 You can create a file `_data/social.yml` to configure links to your social media. For example,

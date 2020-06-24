@@ -68,16 +68,36 @@
     padding-bottom: 5px;
   }
 
-  .page-link {
-    line-height: $base-line-height * $base-font-size * 1.15;
-    display: block;
-    padding: 5px 5px;
+  ul.trigger {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 0;
+    li a {
+      line-height: $base-line-height * $base-font-size * 1.15;
+      display: inline;
+      padding: 5px 10px;
+      margin-left: auto;
     }
-    margin-left: 10px;
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      padding: 5px 10px;
+      display: inline-block;
+      text-align: right;
+      margin-left: auto;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
   }
 
   .current-page {
@@ -102,14 +122,29 @@
       display: block;
     }
 
-    .page-link {
-      display: inline;
-      padding: 0;
-
-      &:not(:last-child) {
-        margin-right: 10px;
+    ul.trigger {
+      li {
+        float: left;
       }
-      margin-left: auto;
+  
+      li a {
+        display: inline-block;
+        text-align: center;
+        padding: 5px 5px;
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+        margin-left: 10px;
+      }
+
+      .dropdown-content a {
+        display: block;
+        text-align: left;
+        padding: 5px 15px 5px 5px;
+        margin-left: 10px;
+      }
     }
   }
 }

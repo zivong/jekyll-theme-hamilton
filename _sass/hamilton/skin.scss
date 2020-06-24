@@ -85,8 +85,12 @@ table {
     }
   }
 
-  .page-link {
+  li a {
     color: $text-color;
+  }
+
+  .dropdown-content {
+    background-color: $border-color-light;
   }
 }
 

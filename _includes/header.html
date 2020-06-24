@@ -14,13 +14,24 @@
           </span>
         </label>
 
-        <div class="trigger">
-          {% for nav in site.data.navigation %}
-            {% if nav.title %}
-              <a class="page-link {% if page.url == nav.url %}current-page{% endif %}" href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a>
-            {% endif %}
-          {% endfor %}
-        </div>
+        <ul class="trigger">
+          {%- for nav in site.data.navigation -%}
+            {%- if nav.title -%}
+              {% if nav.sublinks %}
+                <li class="dropdown" href="#">
+                  <a href="javascript:void(0)" class="dropbtn">{{ nav.title | escape }}</a>
+                  <div class="dropdown-content">
+                    {%- for link in nav.sublinks %}
+                      <a class="{% if page.url == link.url %}current-page{% endif %}" href="{{ link.url | relative_url }}">{{ link.title | escape }}</a>
+                    {%- endfor %}
+                  </div>
+                </li>
+              {% else %}
+                <li><a class="{% if page.url == nav.url %}current-page{% endif %}" href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a></li>
+              {% endif %}
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
       </nav>
     {% endif %}
   </div>

@@ -266,8 +266,10 @@
  * Posts
  */
 .post-header {
-  padding-top: $spacing-unit * 2.5;
-  padding-bottom: $spacing-unit * 2.5;
+  padding-top: $spacing-unit * 2;
+  padding-bottom: $spacing-unit / 2;
+  border-bottom: 1px solid;
+  margin-bottom: $spacing-unit * 2;
   text-align: center;
 }
 
@@ -415,6 +417,7 @@ figcaption.align-center {
  * Site footer
  */
 .site-footer {
+  margin-top: $spacing-unit * 2;
   border-top: 1px solid;
   padding: $spacing-unit 0;
   @include relative-font-size(0.8);

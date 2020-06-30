@@ -19,6 +19,10 @@
   line-height: $base-font-size * 3;
   position: sticky;
   top: 0;
+
+  @include media-query($on-small) {
+    display: flex;
+  }
 }
 
 .site-title {
@@ -28,8 +32,8 @@
   margin-bottom: 0;
   float: left;
 
-  @include media-query($on-medium) {
-    padding-right: 45px;
+  @include media-query($on-small) {
+    float: center;
   }
 }
 
@@ -170,6 +174,10 @@
   @include media-query($on-medium) {
     grid-template-columns: calc(#{$content-width} * 0.15) 1fr;
   }
+
+  @include media-query($on-small) {
+    grid-template-columns: 1fr;
+  }
 }
 
 /**
@@ -182,6 +190,10 @@
 
   @include media-query($on-medium) {
     @include relative-font-size(0.6);
+  }
+
+  @include media-query($on-small) {
+    display: none;
   }
 }
 
@@ -243,6 +255,11 @@
 
   padding-left: $spacing-unit / 2;
   padding-right: $spacing-unit / 2;
+
+  @include media-query($on-small) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 // Hide scrollbar for Chrome, Safari and Opera

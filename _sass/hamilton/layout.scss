@@ -166,6 +166,10 @@
   display: grid;
   grid-template-columns: calc(#{$content-width} * 0.2) 1fr;
   overflow: hidden;
+
+  @include media-query($on-medium) {
+    grid-template-columns: calc(#{$content-width} * 0.15) 1fr;
+  }
 }
 
 /**
@@ -175,6 +179,10 @@
   padding: $spacing-unit / 2;
   border-right: 1px solid;
   @include relative-font-size(0.8);
+
+  @include media-query($on-medium) {
+    @include relative-font-size(0.6);
+  }
 }
 
 .sidebar-section {

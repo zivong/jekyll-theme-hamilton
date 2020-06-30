@@ -174,6 +174,52 @@
 .site-sidebar {
   padding: $spacing-unit / 2;
   border-right: 1px solid;
+  @include relative-font-size(0.8);
+}
+
+.sidebar-section {
+  padding-bottom: $spacing-unit / 2;
+  border-bottom: 1px solid;
+  margin-bottom: $spacing-unit / 2;
+
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.sidebar-icon {
+  margin-right: 0.5em;
+}
+
+.feed-subscribe {
+  font-weight: bold;
+  text-align: left;
+}
+
+.contact-list {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.social-icons {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+  text-align: left;
+  display: flex;
+
+  .social-icon {
+    margin: 0.3em;
+  }
+}
+
+.author-avatar {
+  width: $base-font-size * 9;
+  height: auto;
+  border-radius: 50%;
 }
 
 /**
@@ -445,27 +491,5 @@ figcaption.align-center {
       padding-right: 0;
       padding-left: $spacing-unit / 2;
     }
-  }
-}
-
-.feed-subscribe {
-  font-weight: bold;
-  text-align: left;
-  .feed-icon {
-    margin-right: 0.3em;
-  }
-}
-
-.contact-list {
-  list-style: none;
-  margin-left: 0;
-}
-
-.social-icons {
-  text-align: center;
-  margin-top: $spacing-unit / 2;
-
-  .social-icon {
-    margin: 0.3em;
   }
 }

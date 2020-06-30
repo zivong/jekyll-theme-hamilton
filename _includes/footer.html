@@ -1,26 +1,6 @@
 <div class="footer-col-wrapper">
 
   <div class="footer-col">
-    <p class="feed-subscribe">
-      <a href="{{ 'feed.xml' | relative_url }}">
-        <i class="feed-icon fas fa-rss"></i><span>Subscribe</span>
-      </a>
-    </p>
-    <ul class="contact-list">
-      {%- if site.author -%}
-        <li class="p-name">{{ site.author | escape }}</li>
-      {%- endif -%}
-      {%- if site.email -%}
-        <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-      {%- endif -%}
-    </ul>
-  </div>
-
-  <div class="footer-col">
-    <p>{{ site.description | escape }}</p>
-  </div>
-
-  <div class="footer-col">
     <div class="copyright">
       {% assign year_from = site.posts[-1].date | date: '%Y' %}
       {% assign year_to   = site.time | date: '%Y' %}
@@ -37,12 +17,8 @@
       Powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://github.com/ngzhio/jekyll-theme-hamilton">Hamilton</a>
     </p>
   </div>
-</div>
 
-{% if site.data.social %}
-  <div class="social-icons">
-    {% for social in site.data.social %}
-      <a class="social-icon" href="{{ social.url }}"><i class="{{ social.icon | default: 'fas fa-link' }} fa-2x" title="{{ social.title }}"></i></a>
-    {% endfor %}
+  <div class="footer-col">
+    <p>{{ site.description | escape }}</p>
   </div>
-{% endif %}
+</div>

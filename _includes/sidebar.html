@@ -1,1 +1,39 @@
-<p>This is the sidebar.</p>
+{% if site.avatar -%}
+  <div class="sidebar-section">
+    {%- if site.avatar contains "://" -%}
+      {%- assign avatar = site.avatar -%}
+    {%- else -%}
+      {%- assign avatar = site.avatar | relative_url -%}
+    {%- endif -%}
+    <img src="{{ avatar }}" class="author-avatar u-photo align-center" alt="{{ site.author }}">
+  </div>
+{%- endif %}
+
+<div class="sidebar-section">
+  <ul class="contact-list">
+    {% if site.author -%}
+      <li class="p-name"><i class="sidebar-icon fas fa-at"></i><span>{{ site.author | escape }}</span></li>
+    {%- endif %}
+    {% if site.email -%}
+      <li><a class="u-email" href="mailto:{{ site.email }}"><i class="sidebar-icon fas fa-envelope"></i><span>{{ site.email }}</span></a></li>
+    {%- endif %}
+  </ul>
+</div>
+
+<div class="sidebar-section feed-subscribe">
+  <a href="{{ 'feed.xml' | relative_url }}">
+    <i class="sidebar-icon fas fa-rss"></i><span>Subscribe</span>
+  </a>
+</div>
+
+{% if site.data.social -%}
+  <div class="sidebar-section">
+    <ul class="social-icons">
+      {% for social in site.data.social -%}
+        <li>
+          <a class="social-icon" href="{{ social.url }}"><i class="{{ social.icon | default: 'fas fa-link' }} fa-2x" title="{{ social.title }}"></i></a>
+        </li>
+      {%- endfor %}
+    </ul>
+  </div>
+{%- endif %}

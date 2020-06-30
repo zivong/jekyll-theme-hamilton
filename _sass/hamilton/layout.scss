@@ -8,7 +8,8 @@
   line-height: $base-font-size * 3;
 
   // Positioning context for the mobile navigation icon
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .site-title {

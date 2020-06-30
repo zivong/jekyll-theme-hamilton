@@ -6,53 +6,48 @@ layout: default
 
   <header class="post-header">
 
-    <div class="wrapper">
-
-      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-      <p class="post-meta">
-        {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-          {{ page.date | date: date_format }}
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.modified_date -%}
+        ~ 
+        {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+          {{ mdate | date: date_format }}
         </time>
-        {%- if page.modified_date -%}
-          ~ 
-          {%- assign mdate = page.modified_date | date_to_xmlschema -%}
-          <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
-            {{ mdate | date: date_format }}
-          </time>
-        {%- endif -%}
-        {%- if page.author -%}
-          • {% for author in page.author %}
-            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-              {%- if forloop.last == false %}, {% endif -%}
-          {% endfor %}
-        {%- endif -%}
-      </p>
+      {%- endif -%}
+      {%- if page.author -%}
+        • {% for author in page.author %}
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+            {%- if forloop.last == false %}, {% endif -%}
+        {% endfor %}
+      {%- endif -%}
+    </p>
 
-      {% if page.tags.size > 0 %}
-        <p class="post-meta post-tags">
-          {% assign tags = page.tags | sort %}
-          {% for tag in tags %}
-            <span class="post-tag">
-              {% assign slugified_tag = tag | slugify %}
-              <a href="{{ '/tags/#:tag' | replace: ':tag', slugified_tag | relative_url }}">#{{ slugified_tag }}</a>
-            </span>
-          {% endfor %}
-        </p>
-      {% endif %}
-    </div>
+    {% if page.tags.size > 0 %}
+      <p class="post-meta post-tags">
+        {% assign tags = page.tags | sort %}
+        {% for tag in tags %}
+          <span class="post-tag">
+            {% assign slugified_tag = tag | slugify %}
+            <a href="{{ '/tags/#:tag' | replace: ':tag', slugified_tag | relative_url }}">#{{ slugified_tag }}</a>
+          </span>
+        {% endfor %}
+      </p>
+    {% endif %}
 
   </header>
 
-  <div class="wrapper">
-    <div class="post-content e-content" itemprop="articleBody">
-      {{ content }}
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
 
-      {% if page.comments != false and jekyll.environment == "production" %}
-        {% include disqus.html %}
-      {% endif %}
-    </div>
+    {% if page.comments != false and jekyll.environment == "production" %}
+      {% include disqus.html %}
+    {% endif %}
   </div>
   
 </article>

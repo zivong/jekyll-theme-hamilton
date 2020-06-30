@@ -68,6 +68,10 @@ table {
   border-bottom-color: $border-color-light;
 }
 
+.site-sidebar {
+  border-right-color: $border-color-light;
+}
+
 .site-title {
   color: $text-color;
   
@@ -107,10 +111,6 @@ table {
   &:visited {
     color: $text-color;
   }
-}
-
-.post-header {
-  background-color: $border-color-light;
 }
 
 .post-meta {

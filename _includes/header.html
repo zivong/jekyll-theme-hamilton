@@ -1,4 +1,23 @@
 <div class="wrapper">
+  <script>
+    function clickSidebarButton() {
+      const elem = document.getElementById("site-sidebar")
+      if (elem.style.display == "none") {
+        elem.style.display = "block";
+      } else {
+        elem.style.display = "none";
+      }
+    }
+  </script>
+  <a class="site-sidebar-button" onclick="clickSidebarButton()">
+    {%- if site.avatar contains "://" -%}
+      {%- assign avatar = site.avatar -%}
+    {%- else -%}
+      {%- assign avatar = site.avatar | relative_url -%}
+    {%- endif -%}
+    <i class="far fa-user"></i>
+  </a>
+
   <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
   {% if site.data.navigation %}

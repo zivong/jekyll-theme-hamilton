@@ -25,6 +25,22 @@
   }
 }
 
+.site-sidebar-button {
+  position: absolute;
+  top: -2px;
+  left: $spacing-unit / 2;
+
+  img {
+    width: $base-font-size * 2.5;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  @media screen and (min-width: $on-small) {
+    display: none;
+  }
+}
+
 .site-title {
   @include relative-font-size(1.625);
   font-family: $title-font-family;
@@ -194,6 +210,12 @@
 
   @include media-query($on-small) {
     display: none;
+    border-right: none;
+    border-bottom: 1px solid;
+  }
+
+  @media screen and (min-width: $on-small) {
+    display: block !important;
   }
 }
 

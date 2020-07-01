@@ -3,7 +3,7 @@
 {%- if include.src -%}
   {% assign src = include.src %}
 {%- elsif include.name -%}
-  {% capture src %}assets/img/{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
+  {% capture src %}assets/img/posts/{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
 {%- endif -%}
 
 {% if include.caption %}

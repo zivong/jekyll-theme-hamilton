@@ -139,7 +139,7 @@ You can also configure the width and height of the image,
 
 Besides, you can pass the `caption` parameter to the include, then it will wrap the `img` with a `figure` block; alternatively, you can pass the `alt` parameter to the include.
 
-If you feel that passing a long path to the image to the include is ugly and wasting time, you can replace the `src` parameter with the `name` parameter, which is just the name of the image, and by default, the path would be `assets/img/{{ page.title | slugify}}/{{ include.name }}`.
+If you feel that passing a long path to the image to the include is ugly and wasting time, you can replace the `src` parameter with the `name` parameter, which is just the name of the image, and by default, the path would be `assets/img/posts/{{ page.title | slugify}}/{{ include.name }}`.
 
 ## Customization
 

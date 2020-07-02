@@ -17,8 +17,6 @@
   border-bottom: 1px solid;
   min-height: $base-font-size * 3;
   line-height: $base-font-size * 3;
-  position: sticky;
-  top: 0;
 
   @include media-query($on-small) {
     display: flex;

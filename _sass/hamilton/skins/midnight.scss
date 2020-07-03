@@ -3,8 +3,8 @@ $text-color-light:      silver !default;
 $background-color:      #121212 !default;
 $code-background-color: #49483e !default;
 
-$border-color:          mix($text-color, $background-color, 22%) !default;
-$border-color-light:    darken($border-color, 10%) !default;
+$border-color:          mix($text-color, $background-color, 30%) !default;
+$border-color-light:    darken($border-color, 5%) !default;
 $border-color-dark:     lighten($border-color, 10%) !default;
 
 $link-base-color:       #00b1c9 !default;

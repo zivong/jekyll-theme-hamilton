@@ -33,5 +33,12 @@ layout: page
       </li>
     {%- endfor -%}
   </ul>
-  <a href="#" class="back-to-top">Top &#8648;</a>
+  <a href="#" onclick="backToTop()" class="back-to-top">Top &#8648;</a>
 {%- endfor -%}
+
+<script>
+  function backToTop() {
+    const main = document.getElementById("site-main");
+    main.scrollTop = 0;
+  }
+</script>

@@ -41,7 +41,7 @@
 
 .site-title {
   @include relative-font-size(1.625);
-  font-family: $title-font-family;
+  font-family: $handwriting-font-family;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
@@ -404,6 +404,7 @@ ul.post-categories {
 // About font sizes for h1-h6, refer to https://stackoverflow.com/a/6140504/13261366
 .post-title,
 .post-content h1 {
+  font-family: $display-font-family;
   @include relative-font-size(2);
   font-weight: bold;
   letter-spacing: -1px;

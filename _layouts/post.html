@@ -28,26 +28,46 @@ layout: default
       {%- endif -%}
     </p>
 
-    {% if page.tags.size > 0 %}
-      <p class="post-meta post-tags">
-        {% assign tags = page.tags | sort %}
-        {% for tag in tags %}
-          <span class="post-tag">
-            {% assign slugified_tag = tag | slugify %}
-            <a href="{{ '/tags/#:tag' | replace: ':tag', slugified_tag | relative_url }}">#{{ slugified_tag }}</a>
-          </span>
-        {% endfor %}
-      </p>
-    {% endif %}
-
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
-
-    {% if page.comments != false and jekyll.environment == "production" %}
-      {% include disqus.html %}
-    {% endif %}
   </div>
+
+  <footer class="post-footer">
+    {% if page.categories.size > 0 %}
+      <div class="post-meta">
+        <i class="fas fa-folder"></i>
+        <ul class="post-taxonomies post-categories">
+          {% assign categories = page.categories | sort %}
+          {% for category in categories %}
+            <li class="post-category">
+              {% assign slugified_category = category | slugify %}
+              <a href="{{ '/categories/#:category' | replace: ':category', slugified_category | relative_url }}">{{ category }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if page.tags.size > 0 %}
+      <div class="post-meta">
+        <i class="fas fa-tags"></i>
+        <ul class="post-taxonomies post-tags">
+          {% assign tags = page.tags | sort %}
+          {% for tag in tags %}
+            <li class="post-tag">
+              {% assign slugified_tag = tag | slugify %}
+              <a href="{{ '/tags/#:tag' | replace: ':tag', slugified_tag | relative_url }}">{{ slugified_tag }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  </footer>
+
+  {% if page.comments != false and jekyll.environment == "production" %}
+    {% include disqus.html %}
+  {% endif %}
   
 </article>

@@ -121,6 +121,16 @@ table {
   color: $text-color-light;
 }
 
+.post-footer {
+  border-color: $border-color-light;
+}
+
+ul.post-tags {
+  li {
+    background-color: $border-color-light;
+  }
+}
+
 .pagination {
   li {
     a, div {

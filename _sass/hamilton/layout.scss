@@ -358,7 +358,7 @@
  */
 .post-header {
   padding-top: $spacing-unit * 2;
-  padding-bottom: $spacing-unit / 2;
+  padding-bottom: $spacing-unit;
   border-bottom: 1px solid;
   margin-bottom: $spacing-unit * 2;
   text-align: center;
@@ -369,13 +369,34 @@
   margin-bottom: $spacing-unit / 2;
 }
 
-.post-tags {
-  .post-tag {
-    margin-right: $spacing-unit / 2;
+.post-footer {
+  padding-top: $spacing-unit / 2;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+ul.post-taxonomies {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 $spacing-unit / 3;
+
+  li {
+    float: left;
+    margin-right: $spacing-unit / 6;
+    padding: 0.3em 0.5em 0.2em 0.5em;
   }
-  
-  > :last-child {
-    margin-right: 0;
+}
+
+ul.post-tags {
+  li {
+    border-radius: 0.5em;
+  }
+}
+
+ul.post-categories {
+  li {
+    text-decoration: underline;
   }
 }
 

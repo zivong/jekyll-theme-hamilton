@@ -105,6 +105,14 @@ table {
   }
 }
 
+.post-link {
+  color: $text-color;
+
+  &:visited {
+    color: $text-color;
+  }
+}
+
 .post-header {
   border-bottom-color: $border-color-light;
 }

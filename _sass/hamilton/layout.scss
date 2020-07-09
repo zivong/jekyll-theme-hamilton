@@ -307,6 +307,11 @@
 
     h2 {
       margin-bottom: 0;
+      @include relative-font-size(1.4);
+
+      @media screen and (min-width: $on-large) {
+        @include relative-font-size(1.5);
+      }
     }
 
     .post-excerpt {

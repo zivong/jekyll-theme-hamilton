@@ -424,19 +424,15 @@ ul.post-categories {
   h5, h6 { margin-top: $spacing-unit }
 
   h2 {
-    @include relative-font-size(1.5);
+    @include relative-font-size(1.4);
 
     @media screen and (min-width: $on-large) {
-      @include relative-font-size(1.55);
+      @include relative-font-size(1.5);
     }
   }
 
   h3 {
     @include relative-font-size(1.17);
-
-    @media screen and (min-width: $on-large) {
-      @include relative-font-size(1.175);
-    }
   }
 
   h4 {

@@ -324,14 +324,6 @@
   }
 }
 
-.post-link {
-  @include relative-font-size(1.5);
-
-  @media screen and (min-width: $on-large) {
-    @include relative-font-size(1.55);
-  }
-}
-
 /**
  * Pagination
  */

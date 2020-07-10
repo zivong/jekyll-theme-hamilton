@@ -182,7 +182,7 @@
  */
 .site-body {
   display: grid;
-  grid-template-columns: calc(#{$content-width} * 0.2) 1fr;
+  grid-template-columns: calc(#{$content-width} * 0.22) 1fr;
   overflow: hidden;
 
   @include media-query($on-medium) {
@@ -198,11 +198,12 @@
  * Site sidebar
  */
 .site-sidebar {
-  padding: $spacing-unit / 2 $spacing-unit $spacing-unit / 2 $spacing-unit / 2;
+  padding: $spacing-unit;
   border-right: 1px solid;
   @include relative-font-size(0.8);
 
   @include media-query($on-medium) {
+    padding: $spacing-unit / 2;
     @include relative-font-size(0.6);
   }
 
@@ -244,14 +245,13 @@
   margin-bottom: 0;
 }
 
-.social-icons {
+ul.social-icons {
   list-style: none;
   margin-left: 0;
   margin-bottom: 0;
-  text-align: left;
-  display: flex;
 
-  .social-icon {
+  > li {
+    display: inline-block;
     margin: 0.3em;
   }
 }
@@ -274,7 +274,12 @@
   scrollbar-width: none;     // Firefox
 
   padding-left: $spacing-unit;
-  padding-right: $spacing-unit / 2;
+  padding-right: $spacing-unit;
+
+  @include media-query($on-medium) {
+    padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
+  }
 
   @include media-query($on-small) {
     padding-left: 0;

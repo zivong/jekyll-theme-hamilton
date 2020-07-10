@@ -198,7 +198,7 @@
  * Site sidebar
  */
 .site-sidebar {
-  padding: $spacing-unit / 2;
+  padding: $spacing-unit / 2 $spacing-unit $spacing-unit / 2 $spacing-unit / 2;
   border-right: 1px solid;
   @include relative-font-size(0.8);
 
@@ -273,7 +273,7 @@
   -ms-overflow-style: none;  // IE and Edge
   scrollbar-width: none;     // Firefox
 
-  padding-left: $spacing-unit / 2;
+  padding-left: $spacing-unit;
   padding-right: $spacing-unit / 2;
 
   @include media-query($on-small) {

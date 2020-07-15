@@ -16,7 +16,8 @@ $table-header-bg-color: mix($background-color, $border-color, 70%) !default;
 $table-header-border:   $border-color !default;
 $table-border-color:    $border-color-light !default;
 
-$box-shadow:            0 0 4px rgba(34,34,34,0.4) inset !default;
+$pre-shadow:            0 0 4px rgba(34,34,34,0.4) inset !default;
+$dropdown-shadow:       0px 8px 16px 0px rgba(0,0,0,0.2) !default;
 
 $subscribe-color:       #004e00 !default;
 

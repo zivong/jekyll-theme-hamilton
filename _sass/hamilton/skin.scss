@@ -28,7 +28,7 @@ code {
 }
 
 pre {
-  box-shadow: $box-shadow;
+  box-shadow: $pre-shadow;
 }
 
 .highlight {
@@ -96,6 +96,7 @@ table {
 
   .dropdown-content {
     background-color: $border-color-light;
+    box-shadow: $dropdown-shadow;
   }
 }
 

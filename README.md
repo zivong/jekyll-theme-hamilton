@@ -32,7 +32,6 @@ Please check out the [demo](https://ngzhio.github.io/jekyll-theme-hamilton/).
   - [Optional Parameters](#optional-parameters)
 - [Archive Pages](#archive-pages)
 - [MathJax](#mathjax)
-- [Images](#images)
 - [Customization](#customization)
   - [Metadata](#metadata)
   - [Navigation](#navigation)
@@ -116,30 +115,6 @@ layout: archive-years
 ## MathJax
 
 You can enable MathJax on each post or page, just set `math: true` on that page.
-
-## Images
-
-Hamilton provides a template [`image.html`](_includes/image.html) to let you import images on each post through an elegant way. For example,
-
-```liquid
-{% include image.html src="the/path/to/the/image" %}
-```
-
-By default, the alignment of the image is center, but you can configure the alignment to left or right by passing a parameter `align`, for example,
-
-```liquid
-{% include image.html src="the/path/to/the/image" align="left" %}
-```
-
-You can also configure the width and height of the image,
-
-```liquid
-{% include image.html src="the/path/to/the/image" width="50%" height="128px" %}
-```
-
-Besides, you can pass the `caption` parameter to the include, then it will wrap the `img` with a `figure` block; alternatively, you can pass the `alt` parameter to the include.
-
-If you feel that passing a long path to the image to the include is ugly and wasting time, you can replace the `src` parameter with the `name` parameter, which is just the name of the image, and by default, the path would be `assets/img/posts/{{ page.title | slugify}}/{{ include.name }}`.
 
 ## Customization
 

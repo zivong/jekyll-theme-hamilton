@@ -85,7 +85,7 @@ After installation, you can run `jekyll serve` to check out your site, but befor
 | `email`    | string | The email of the author of the site. |
 | `skin`     | string | The skin name. See more information on the [Customization](#customization) section. |
 | `lang`     | string | The language of the site; The default value is `en`. |
-| `paginate` | int    | The number of posts on each page. To enable pagination, you must use a third-party plugin, e.g. [`jekyll-paginate`](https://github.com/jekyll/jekyll-paginate), [`jekyll-paginate-v2`](https://github.com/sverrirs/jekyll-paginate-v2), or [`jekyll-pagination`](https://github.com/prometheus-ev/jekyll-pagination). |
+| `paginate` | int    | The number of posts on each page. |
 | `date_format` | string | The date format; The default value is `%b %-d, %Y`. |
 
 ## Archive Pages

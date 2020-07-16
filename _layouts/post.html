@@ -64,6 +64,20 @@ layout: default
         </ul>
       </div>
     {% endif %}
+
+    <nav class="post-pagination" role="navigation">
+      {% if page.previous %}
+        <a class="post-previous" href="{{ page.previous.url | relative_url }}">
+          <i class="fas fa-arrow-left"></i> {{ page.previous.title | markdownify | strip_html }}
+        </a>
+      {% endif %}
+    
+      {% if page.next %}
+        <a class="post-next" href="{{ page.next.url | relative_url }}">
+          {{ page.next.title | markdownify | strip_html }} <i class="fas fa-arrow-right"></i>
+        </a>
+      {% endif %}
+    </nav>
   </footer>
 
   {% if page.comments != false and jekyll.environment == "production" %}

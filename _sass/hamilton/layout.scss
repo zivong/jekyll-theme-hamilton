@@ -401,6 +401,20 @@ ul.post-categories {
   }
 }
 
+.post-pagination {
+  @include relative-font-size(0.8);
+  display: flex;
+  justify-content: space-between;
+  padding-top: $spacing-unit / 2;
+  padding-bottom: $spacing-unit / 2;
+  border-top: 1px solid;
+
+  .post-previous
+  .post-next {
+    display: block;
+  }
+}
+
 
 // About font sizes for h1-h6, refer to https://stackoverflow.com/a/6140504/13261366
 .post-title,

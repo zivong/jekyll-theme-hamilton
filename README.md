@@ -23,7 +23,6 @@ Please check out the [demo](https://ngzhio.github.io/jekyll-theme-hamilton/).
 - Configurable page navigation
 - Customizable styles and skins
 - Archive pages implemented in pure Liquid
-- An elegant way to import images on posts
 
 ## Table of Contents <!-- omit in toc -->
 

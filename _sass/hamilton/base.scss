@@ -84,7 +84,7 @@ li {
     margin-bottom: 0;
   }
 
-  p {
+  p, blockquote, pre, figure, iframe, %vertical-rhythm {
     margin-bottom: $spacing-unit / 3;
   }
 }

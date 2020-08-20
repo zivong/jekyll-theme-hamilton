@@ -62,7 +62,7 @@ You can choose one of the following methods to install Hamilton:
         plugins:
           - jekyll-remote-theme
 
-        remote-theme: ngzhio/jekyll-theme-hamilton
+        remote_theme: ngzhio/jekyll-theme-hamilton
         ```
 
 ## Configuration

@@ -6,9 +6,11 @@ The original purpose of this theme is to be a replacement of the default Jekyll 
 
 Please check out the [demo](https://ngzhio.github.io/jekyll-theme-hamilton/).
 
-| Daylight | Sunrise/Sunset | Midnight |
-| --- | --- | --- |
-| ![screenshot](screenshot.png) | ![screenshot](screenshot-sunrise.png) | ![screenshot](screenshot-midnight.png)
+| Skins | Displays |
+| ----- | -------- |
+| Daylight | ![screenshot](screenshot.png) |
+| Sunrise/Sunset | ![screenshot](screenshot-sunrise.png) |
+| Midnight | ![screenshot](screenshot-midnight.png) |
 
 ## Features <!-- omit in toc -->
 

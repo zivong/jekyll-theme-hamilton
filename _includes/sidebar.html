@@ -12,10 +12,16 @@
 <div class="sidebar-section">
   <ul class="contact-list">
     {% if site.author -%}
-      <li class="p-name"><i class="sidebar-icon fas fa-at"></i><span>{{ site.author | escape }}</span></li>
+      <li>
+        <i class="sidebar-icon fas fa-at"></i>
+        <span class="contact-info p-name">{{ site.author | escape }}</span>
+      </li>
     {%- endif %}
     {% if site.email -%}
-      <li><a class="u-email" href="mailto:{{ site.email }}"><i class="sidebar-icon fas fa-envelope"></i><span>{{ site.email }}</span></a></li>
+      <li>
+        <i class="sidebar-icon fas fa-envelope"></i>
+        <a class="contact-info u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </li>
     {%- endif %}
   </ul>
 </div>

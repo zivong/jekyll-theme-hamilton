@@ -126,11 +126,12 @@ blockquote {
 pre,
 code {
   font-family: $code-font-family;
+  letter-spacing: -1px;
   border-radius: 0.3em;
 }
 
 code {
-  padding: 1px 5px;
+  padding: 0px 5px;
 }
 
 pre {

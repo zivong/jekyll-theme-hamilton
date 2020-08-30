@@ -471,6 +471,19 @@ ul.post-categories {
   h6 {
     @include relative-font-size(0.75);
   }
+
+  li {
+    margin-bottom: $spacing-unit / 3;
+
+    > ul
+    > ol {
+      margin-top: $spacing-unit / 3;
+    }
+
+    p, blockquote, pre, figure, iframe, %vertical-rhythm {
+      margin-bottom: $spacing-unit / 3;
+    }
+  }
 }
 
 /**

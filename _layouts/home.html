@@ -23,6 +23,9 @@ layout: default
           </a>
         </h2>
         <span class="post-meta">{{ post.date | date: date_format }}</span>
+        {%- if jekyll.environment == "production" and site.disqus -%}
+          • <span class="post-meta disqus-comment-count" data-disqus-url="{{ post.url | absolute_url }}"></span>
+        {%- endif -%}
         {%- if post.show_excerpts != false -%}
           <div class="post-excerpt">{{ post.excerpt | strip_html }}</div>
         {%- endif -%}
@@ -49,5 +52,8 @@ layout: default
     {%- endif %}
 
   {%- endif -%}
-
+  
+  {%- if jekyll.environment == "production" and site.disqus -%}
+    <script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>
+  {%- endif -%}
 </div>

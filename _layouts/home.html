@@ -22,10 +22,14 @@ layout: default
             {{ post.title | escape }}
           </a>
         </h2>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        {%- if jekyll.environment == "production" and site.disqus -%}
-          • <span class="post-meta disqus-comment-count" data-disqus-url="{{ post.url | absolute_url }}"></span>
-        {%- endif -%}
+        <p class="post-meta">
+          <time class="dt-published">{{ post.date | date: date_format }}</time>
+          {%- if jekyll.environment == "production" and site.disqus -%}
+            • <a href="{{ post.url | relative_url }}#disqus_thread">
+                <span class="disqus-comment-count" data-disqus-url="{{ post.url | absolute_url }}"></span>
+              </a>
+          {%- endif -%}
+        </p>
         {%- if post.show_excerpts != false -%}
           <div class="post-excerpt">{{ post.excerpt | strip_html }}</div>
         {%- endif -%}

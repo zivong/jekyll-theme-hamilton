@@ -23,7 +23,9 @@ layout: default
           </a>
         </h2>
         <p class="post-meta">
-          <time class="dt-published">{{ post.date | date: date_format }}</time>
+          <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+            {{ post.date | date: date_format }}
+          </time>
           {%- if jekyll.environment == "production" and site.disqus -%}
             • <a href="{{ post.url | relative_url }}#disqus_thread">
                 <span class="disqus-comment-count" data-disqus-url="{{ post.url | absolute_url }}"></span>

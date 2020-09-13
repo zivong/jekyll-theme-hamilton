@@ -84,6 +84,7 @@ After installation, you can run `jekyll serve` to check out your site, but befor
 | `author`   | string | The name of the author of the site; It would be showed in the copyright statement. |
 | `avatar`   | string | The avatar of the author of the site. |
 | `email`    | string | The email of the author of the site. |
+| `location` | string | The current living location of the author of the site. |
 | `skin`     | string | The skin name. See more information on the [Customization](#customization) section. |
 | `lang`     | string | The language of the site; The default value is `en`. |
 | `paginate` | int    | The number of posts on each page. |

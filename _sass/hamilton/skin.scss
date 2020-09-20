@@ -164,3 +164,19 @@ ul.post-tags {
     color: $subscribe-color;
   }
 }
+
+.toc-title {
+  color: $background-color;
+  background-color: $border-color-dark;
+  border-color: $border-color;
+}
+
+.toc-nav {
+  border-color: $border-color;
+}
+
+.toc-nav ul {
+  li a {
+    border-color: $border-color;
+  }
+}

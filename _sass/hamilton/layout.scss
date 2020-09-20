@@ -267,6 +267,55 @@ ul.social-icons {
   border-radius: 50%;
 }
 
+.toc-title {
+  text-align: center;
+  margin: 0;
+  padding: $spacing-unit / 3;
+  border: 1px solid;
+  border-radius: 0.3em 0.3em 0 0;
+}
+
+.toc-nav {
+  max-height: 60vh;
+  overflow-y: scroll;
+  border: 1px solid;
+  border-top: 0;
+  border-radius: 0 0 0.3em 0.3em;
+  font-weight: bold;
+}
+
+.toc-nav ul {
+  margin: 0;
+  width: 100%;
+  list-style: none;
+
+  li a {
+    padding: 0.5rem;
+    display: block;
+    border-bottom: 1px solid;
+  }
+
+  li ul > li a {
+    padding-left: 1.25rem;
+  }
+
+  li ul li ul > li a {
+    padding-left: 1.75rem;
+  }
+
+  li ul li ul li ul > li a {
+    padding-left: 2.25rem;
+  }
+
+  li ul li ul li ul li ul > li a {
+    padding-left: 2.75rem;
+  }
+
+  li ul li ul li ul li ul li ul > li a {
+    padding-left: 3.25rem
+  }
+}
+
 /**
  * Site main
  */

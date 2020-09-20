@@ -173,10 +173,13 @@ ul.post-tags {
 
 .toc-nav {
   border-color: $border-color;
-}
 
-.toc-nav ul {
-  li a {
+  ul li a {
+    color: $text-color;
     border-color: $border-color;
+
+    &:hover {
+      background-color: $border-color-light;
+    }
   }
 }

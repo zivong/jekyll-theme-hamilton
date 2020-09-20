@@ -268,51 +268,54 @@ ul.social-icons {
 }
 
 .toc-title {
+  @include relative-font-size(1);
   text-align: center;
-  margin: 0;
-  padding: $spacing-unit / 3;
+  font-weight: bold;
   border: 1px solid;
   border-radius: 0.3em 0.3em 0 0;
+  padding: 0.5rem;
+  margin: 0;
 }
 
 .toc-nav {
-  max-height: 60vh;
+  max-height: 80vh;
   overflow-y: scroll;
   border: 1px solid;
-  border-top: 0;
+  border-top: 0px;
   border-radius: 0 0 0.3em 0.3em;
-  font-weight: bold;
-}
 
-.toc-nav ul {
-  margin: 0;
-  width: 100%;
-  list-style: none;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 
-  li a {
-    padding: 0.5rem;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
     display: block;
-    border-bottom: 1px solid;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
-  li ul > li a {
+  ul {
+    list-style: none;
+
+    li a {
+      @include relative-font-size(0.9);
+      font-weight: bold;
+      border-bottom: 1px solid;
+      padding: 0.5rem;
+    }
+  }
+
+  li ul li a {
+    @include relative-font-size(0.8);
+    font-weight: normal;
     padding-left: 1.25rem;
-  }
-
-  li ul li ul > li a {
-    padding-left: 1.75rem;
-  }
-
-  li ul li ul li ul > li a {
-    padding-left: 2.25rem;
-  }
-
-  li ul li ul li ul li ul > li a {
-    padding-left: 2.75rem;
-  }
-
-  li ul li ul li ul li ul li ul > li a {
-    padding-left: 3.25rem
   }
 }
 

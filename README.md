@@ -21,6 +21,7 @@ Please check out the [demo](https://ngzhio.github.io/jekyll-theme-hamilton/).
 - [MathJax](https://www.mathjax.org/)
 - [Disqus](https://disqus.com/)
 - [Font Awesome](https://fontawesome.com/)
+- TOC
 - Customizable head
 - Configurable page navigation
 - Customizable styles and skins
@@ -33,6 +34,7 @@ Please check out the [demo](https://ngzhio.github.io/jekyll-theme-hamilton/).
   - [Optional Parameters](#optional-parameters)
 - [Archive Pages](#archive-pages)
 - [MathJax](#mathjax)
+- [TOC](#toc)
 - [Customization](#customization)
   - [Metadata](#metadata)
   - [Navigation](#navigation)
@@ -117,6 +119,10 @@ layout: archive-years
 ## MathJax
 
 You can enable MathJax on each post or page, just set `math: true` on that page.
+
+## TOC
+
+If you want to show the Table of Contents of a post or page on the left sidebar, just set `toc: true` on that page.
 
 ## Customization
 

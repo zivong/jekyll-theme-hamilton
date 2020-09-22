@@ -1,5 +1,9 @@
 html {
   font-size: $base-font-size;
+
+  @include media-query($on-small) {
+    @include relative-font-size(0.89);
+  }
 }
 
 /**

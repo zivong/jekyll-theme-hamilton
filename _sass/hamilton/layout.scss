@@ -181,11 +181,11 @@
  */
 .site-body {
   display: grid;
-  grid-template-columns: calc(#{$content-width} * 0.22) 1fr;
+  grid-template-columns: calc(#{$content-width} * 0.24) 1fr;
   overflow: hidden;
 
   @include media-query($on-medium) {
-    grid-template-columns: calc(#{$content-width} * 0.15) 1fr;
+    grid-template-columns: calc(#{$content-width} * 0.18) 1fr;
   }
 
   @include media-query($on-small) {
@@ -268,7 +268,6 @@ ul.social-icons {
 }
 
 .toc-title {
-  @include relative-font-size(1);
   text-align: center;
   font-weight: bold;
   border: 1px solid;
@@ -305,7 +304,6 @@ ul.social-icons {
     list-style: none;
 
     li a {
-      @include relative-font-size(0.9);
       font-weight: bold;
       border-bottom: 1px solid;
       padding: 0.5rem;
@@ -313,7 +311,6 @@ ul.social-icons {
   }
 
   li ul li a {
-    @include relative-font-size(0.8);
     font-weight: normal;
     padding-left: 1.25rem;
   }

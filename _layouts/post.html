@@ -68,13 +68,19 @@ layout: default
     <nav class="post-pagination" role="navigation">
       {% if page.previous %}
         <a class="post-previous" href="{{ page.previous.url | relative_url }}">
-          <i class="fas fa-arrow-left"></i> {{ page.previous.title | markdownify | strip_html }}
+          <h4 class="post-pagination-label">Prev</h4>
+          <span class="post-pagination-title">
+            <i class="fas fa-arrow-left"></i> {{ page.previous.title | markdownify | strip_html }}
+          </span>
         </a>
       {% endif %}
-    
+
       {% if page.next %}
         <a class="post-next" href="{{ page.next.url | relative_url }}">
-          {{ page.next.title | markdownify | strip_html }} <i class="fas fa-arrow-right"></i>
+          <h4 class="post-pagination-label">Next</h4>
+          <span class="post-pagination-title">
+            {{ page.next.title | markdownify | strip_html }} <i class="fas fa-arrow-right"></i>
+          </span>
         </a>
       {% endif %}
     </nav>

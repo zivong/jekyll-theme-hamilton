@@ -181,7 +181,7 @@
  */
 .site-body {
   display: grid;
-  grid-template-columns: calc(#{$content-width} * 0.24) 1fr;
+  grid-template-columns: calc(#{$content-width} * 0.20) 1fr;
   overflow: hidden;
 
   @include media-query($on-medium) {
@@ -271,7 +271,7 @@ ul.social-icons {
   text-align: center;
   font-weight: bold;
   border: 1px solid;
-  border-radius: 0.3em 0.3em 0 0;
+  border-radius: 0em 0em 0 0;
   padding: 0.5rem;
   margin: 0;
 }
@@ -279,7 +279,7 @@ ul.social-icons {
 .toc-nav {
   max-height: 70vh;
   overflow-y: scroll;
-  border: 1px solid;
+  border: 0px solid;
   border-top: 0px;
   border-radius: 0 0 0.3em 0.3em;
 
@@ -305,7 +305,7 @@ ul.social-icons {
 
     li a {
       font-weight: bold;
-      border-bottom: 1px solid;
+      border-bottom: 0px solid;
       padding: 0.5rem;
     }
   }

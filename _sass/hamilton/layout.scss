@@ -672,3 +672,17 @@ figcaption.align-center {
     }
   }
 }
+
+figure {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+figure img {
+  vertical-align: middle;
+  height: auto;
+}
+figure figcaption {
+  text-align: center;
+  color: gray;
+}

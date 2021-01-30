@@ -86,7 +86,7 @@ layout: default
     </nav>
   </footer>
 
-  {% if page.comments != false and jekyll.environment == "production" and site.disqus %}
+  {% if site.disqus %}
     {% include disqus.html %}
   {% endif %}
   

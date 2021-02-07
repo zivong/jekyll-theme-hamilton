@@ -86,8 +86,16 @@ layout: default
     </nav>
   </footer>
 
-  {% if site.disqus %}
+  {% comment %} {% if site.disqus %}
     {% include disqus.html %}
-  {% endif %}
-  
+  {% endif %} {% endcomment %}
+
+<script src="https://utteranc.es/client.js"
+        repo="leeminjoo/leeminjoo.github.io"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
 </article>

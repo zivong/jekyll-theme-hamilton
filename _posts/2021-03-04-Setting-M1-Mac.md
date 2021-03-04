@@ -10,8 +10,8 @@ M1 맥 셋팅하는 과정을 정리했습니다. 중간 중간 겪은 어려움
 ## Homebrew 설치하기
 
 참고 자료
-* [https://whitepaek.tistory.com/3](https://whitepaek.tistory.com/3)
-* [https://velog.io/@mordred/Apple-M1-Mac%EC%97%90%EC%84%9C-HomeBrew-%EC%84%A4%EC%B9%98](https://velog.io/@mordred/Apple-M1-Mac%EC%97%90%EC%84%9C-HomeBrew-%EC%84%A4%EC%B9%98)
+* [1](https://whitepaek.tistory.com/3)
+* [2](https://velog.io/@mordred/Apple-M1-Mac%EC%97%90%EC%84%9C-HomeBrew-%EC%84%A4%EC%B9%98)
 
 ### Intel
 

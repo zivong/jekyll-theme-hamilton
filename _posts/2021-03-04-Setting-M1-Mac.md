@@ -84,31 +84,25 @@ Iterm2, Slack, Chrome, VSCode, spectacle, keepingyouawake, karabiner-elements를
 brew install --cask iterm2 slack google-chrome visual-studio-code spectacle keepingyouawake karabiner-elements
 ```
 
-### spectacle
+### spectacle [맥에서 이중창 하기]
 
-맥에서 이중창 하기
+### keepingyouawake [맥 꺼짐 방지]
 
-### keepingyouawake
-
-맥 꺼짐 방지
-
-### karabiner-elements
-
-커맨드로 한영 전환 하기
+### karabiner-elements [커맨드로 한영 전환 하기]
 
 [참고 자료](https://godoftyping.wordpress.com/2018/04/09/mac-%EB%A7%A5%EC%97%90%EC%84%9C-%ED%95%9C%EC%98%81%EC%A0%84%ED%99%98%ED%95%98%EB%8A%94-%EB%8B%A4%EC%96%91%ED%95%9C-%EB%B0%A9%EB%B2%95%EB%93%A4/)
 
 ## 그외 설치하기
 
+### zsh
+
 ```zsh
-brew install git pyenv pyenv-virtualenv zsh xz
+brew install zsh
 ```
 
 ### zsh - oh-my-zsh
 
-더 편리한 터미널을 만들어 준다
-
-[참고 자료](https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c)
+더 편리한 터미널을 만들어 준다 [참고 자료](https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c)
 
 ```zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -116,9 +110,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 ### pyenv
 
-파이썬 버전 관리를 쉽게 한다.
+파이썬 버전 관리를 쉽게 한다. [참고 자료](http://guswnsxodlf.github.io/pyenv-virtualenv-autoenv)
 
-[참고 자료](http://guswnsxodlf.github.io/pyenv-virtualenv-autoenv)
+```zsh
+brew install pyenv pyenv-virtualenv xz
+```
 
 `~/.zshrc`를 연다.
 
@@ -175,7 +171,13 @@ pyenv install --patch 3.8.6 <<(curl -sSL https://raw.githubusercontent.com/Homeb
 pyenv virtualenv 3.8.6 env
 ```
 
-### git - config 설정
+### git
+
+```zsh
+brew install git
+```
+
+config 설정한다.
 
 ```zsh
 git config --global user.name "LEEMINJOO"

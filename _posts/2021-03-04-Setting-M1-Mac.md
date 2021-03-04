@@ -10,8 +10,8 @@ M1 맥 셋팅하는 과정을 정리했습니다. 중간 중간 겪은 어려움
 ## Homebrew 설치하기
 
 참고 자료
-* https://whitepaek.tistory.com/3
-* https://velog.io/@mordred/Apple-M1-Mac%EC%97%90%EC%84%9C-HomeBrew-%EC%84%A4%EC%B9%98
+* [https://whitepaek.tistory.com/3](https://whitepaek.tistory.com/3)
+* [https://velog.io/@mordred/Apple-M1-Mac%EC%97%90%EC%84%9C-HomeBrew-%EC%84%A4%EC%B9%98](https://velog.io/@mordred/Apple-M1-Mac%EC%97%90%EC%84%9C-HomeBrew-%EC%84%A4%EC%B9%98)
 
 ### Intel
 
@@ -96,8 +96,7 @@ brew install --cask iterm2 slack google-chrome visual-studio-code spectacle keep
 
 커맨드로 한영 전환 하기
 
-참고 자료
-* https://godoftyping.wordpress.com/2018/04/09/mac-%EB%A7%A5%EC%97%90%EC%84%9C-%ED%95%9C%EC%98%81%EC%A0%84%ED%99%98%ED%95%98%EB%8A%94-%EB%8B%A4%EC%96%91%ED%95%9C-%EB%B0%A9%EB%B2%95%EB%93%A4/
+[참고 자료](https://godoftyping.wordpress.com/2018/04/09/mac-%EB%A7%A5%EC%97%90%EC%84%9C-%ED%95%9C%EC%98%81%EC%A0%84%ED%99%98%ED%95%98%EB%8A%94-%EB%8B%A4%EC%96%91%ED%95%9C-%EB%B0%A9%EB%B2%95%EB%93%A4/)
 
 ## 그외 설치하기
 
@@ -109,8 +108,7 @@ brew install git pyenv pyenv-virtualenv zsh xz
 
 더 편리한 터미널을 만들어 준다
 
-참고 자료 
-* https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c
+[참고 자료](https://medium.com/ayuth/iterm2-zsh-oh-my-zsh-the-most-power-full-of-terminal-on-macos-bdb2823fb04c)
 
 ```zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -120,8 +118,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 파이썬 버전 관리를 쉽게 한다.
 
-참고 자료
-* http://guswnsxodlf.github.io/pyenv-virtualenv-autoenv
+[참고 자료](http://guswnsxodlf.github.io/pyenv-virtualenv-autoenv)
 
 `~/.zshrc`를 연다.
 
@@ -168,7 +165,7 @@ Results logged to /var/folders/dq/w4l2nqb95vd3k4dgp04dnt600000gn/T/python-build.
 ```
 
 
-아래로 해결함(M1)
+아래로 해결했다(M1) [참고자료](https://github.com/pyenv/pyenv/issues/1768)
 ```
 pyenv install --patch 3.8.6 <<(curl -sSL https://raw.githubusercontent.com/Homebrew/formula-patches/113aa84/python/3.8.3.patch\?full_index\=1)
 ```
@@ -180,5 +177,4 @@ pyenv virtualenv 3.8.6 env
 
 ### git - two-factor 설정
 
-참고 자료
-* https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
+[참고 자료](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)

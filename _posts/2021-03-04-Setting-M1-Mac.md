@@ -175,6 +175,13 @@ pyenv install --patch 3.8.6 <<(curl -sSL https://raw.githubusercontent.com/Homeb
 pyenv virtualenv 3.8.6 env
 ```
 
+### git - config 설정
+
+```zsh
+git config --global user.name "LEEMINJOO"
+git config --global user.email "leeminjoo@example.com"
+```
+
 ### git - two-factor 설정
 
 [참고 자료](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)

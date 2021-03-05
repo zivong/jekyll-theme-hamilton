@@ -1,7 +1,7 @@
 ---
 layout: post
 toc: true
-title: "M1 Mac 셋팅하기"
+title: "M1 Mac 셋팅하기 - Homebrew, pyenv"
 categories: Mac-setting
 ---
 

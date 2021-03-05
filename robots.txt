@@ -1,0 +1,3 @@
+ser-agent: *
+Allow: /
+Sitemap: http://leeminjoo.github.io/sitemap.xml

@@ -43,3 +43,6 @@ social:
     - https://github.com/LEEMINJOO
 google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
 lang: en
+
+plugins : 
+  - jekyll-sitemap

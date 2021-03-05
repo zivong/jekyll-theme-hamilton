@@ -3,6 +3,9 @@ layout: post
 toc: true
 title: "M1 Mac 셋팅하기 - Homebrew, pyenv"
 categories: Mac-setting
+sitemap :
+changefreq : daily
+priority : 1.0
 ---
 
 M1 맥 셋팅하는 과정을 정리했습니다. 중간 중간 겪은 어려움과 해결법까지 정리했습니다.

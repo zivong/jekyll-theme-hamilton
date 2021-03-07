@@ -183,7 +183,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 ### numpy 설치하기
 
-다음 포스트 [M1 Mac python 환경 구성하기 - numpy]({% 2021-03-07-Setting-Dev-M1-Mac-Install-Numpy-with-Pyenv %}) 참고 부탁드립니다.
+다음 포스트 [M1 Mac python 환경 구성하기 - numpy]({% post_url 2021-03-07-Setting-Dev-M1-Mac-Install-Numpy-with-Pyenv %}) 참고 부탁드립니다.
 
 ### 오류 해결하기
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 toc: true
-title: "M1 Mac 세팅하기 - Homebrew, pyenv"
+title: "M1 Mac 세팅하기 - Homebrew, pyenv, numpy"
 categories: Mac-setting
 sitemap :
 changefreq : daily
@@ -214,6 +214,64 @@ Results logged to /var/folders/dq/w4l2nqb95vd3k4dgp04dnt600000gn/T/python-build.
 pyenv install --patch 3.8.6 <<(curl -sSL https://raw.githubusercontent.com/Homebrew/formula-patches/113aa84/python/3.8.3.patch\?full_index\=1)
 ```
 
+### Numpy & Pandas 등 python package 설치하기
+
+pyenv로 만든 환경 내에서 Numpy를 설치하고 실행하면 계속 오류가 발생했다.
+
+```python
+>>> import numpy as np
+Traceback (most recent call last):
+...
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.8 from "/Users/m/.pyenv/versions/env/bin/python"
+  * The NumPy version is: "1.20.1"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+```
+
+우회해서 설치하는 방법을 찾아서 공유합니다. 더 좋은 방법이 있을 수 있습니다.
+
+1. pyenv로 miniconda 설치합니다.
+
+    ```
+    pyenv install miniforge3-4.9.2
+    ```
+
+2. miniconda 기반으로 `conda-env` 환경을 만듭니다. (`conda-env` 대신 원하는 환경명을 작성합니다.) 
+    이때 python 버전은 3.9.2 입니다. 
+
+    ```
+    pyenv virtualenv miniforge3-4.9.2 conda-env
+    ```
+
+3. `conda-env` 환경을 실행합니다.
+
+    ```
+    pyenv activate miniforge3-4.9.2
+    conda activate conda-env
+    ```
+
+4. 이제 conda를 이용한 python package 설치가 가능합니다.
+
+    ```
+    $ conda install numpy
+    $ python
+    ```
+    ```python
+    >>> import numpy as np
+    ```
 
 ### git 설치하기
 
@@ -239,3 +297,4 @@ pyenv install --patch 3.8.6 <<(curl -sSL https://raw.githubusercontent.com/Homeb
 * [https://whitepaek.tistory.com/3](https://whitepaek.tistory.com/3)
 * [https://velog.io/@mordred/Apple-M1-Mac%EC%97%90%EC%84%9C-HomeBrew-%EC%84%A4%EC%B9%98](https://velog.io/@mordred/Apple-M1-Mac%EC%97%90%EC%84%9C-HomeBrew-%EC%84%A4%EC%B9%98)
 * [https://github.com/pyenv/pyenv/issues/1768](https://github.com/pyenv/pyenv/issues/1768)
+* [https://github.com/rybodiddly/Poetry-Pyenv-Homebrew-Numpy-TensorFlow-on-Apple-Silicon-M1](https://github.com/rybodiddly/Poetry-Pyenv-Homebrew-Numpy-TensorFlow-on-Apple-Silicon-M1)

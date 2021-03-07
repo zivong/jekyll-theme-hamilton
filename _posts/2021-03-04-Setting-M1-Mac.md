@@ -124,7 +124,7 @@ Homebrew를 이용해서 응용프로그램을 설치할 수 있습니다. (주�
 * keepingyouawake [맥 꺼짐 방지]
 * *karabiner-elements [커맨드로 한영 전환 하기] [참고 자료](https://godoftyping.wordpress.com/2018/04/09/mac-%EB%A7%A5%EC%97%90%EC%84%9C-%ED%95%9C%EC%98%81%EC%A0%84%ED%99%98%ED%95%98%EB%8A%94-%EB%8B%A4%EC%96%91%ED%95%9C-%EB%B0%A9%EB%B2%95%EB%93%A4/)
 
-## 그외 설치하기
+## 개발환경 설치하기
 
 ### zsh
 

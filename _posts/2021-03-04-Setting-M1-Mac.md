@@ -14,15 +14,15 @@ M1 Mac 세팅하는 과정을 정리했습니다. 중간 중간 겪은 어려움
 
 1. XCode 설치하기
 
-```
-xcode-select --install
-```
+    ```
+    xcode-select --install
+    ```
 
 2. `SDKROOT` 경로 `.zsrhc` 추가
 
-```
-echo 'export SDKROOT="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"' >> ~/.zshrc
-```
+    ```
+    echo 'export SDKROOT="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"' >> ~/.zshrc
+    ```
 
 ### 오류 해결하기
 
@@ -30,15 +30,15 @@ echo 'export SDKROOT="/Applications/Xcode.app/Contents/Developer/Platforms/MacOS
 
 1. Old Tool을 제거합니다.
 
-```
-sudo rm -rf /Library/Developer/CommandLineTools
-```
+    ```
+    sudo rm -rf /Library/Developer/CommandLineTools
+    ```
 
 2. 다시 설치합니다.
 
-```
-xcode-select --install
-```
+    ```
+    xcode-select --install
+    ```
 
 
 ## Homebrew 설치하기
@@ -47,62 +47,62 @@ xcode-select --install
 
 1. [Homebrew](https://brew.sh/index_ko) 접속해서 스크립트를 복사하고 터미널을 열어 실행합니다.
 
-```bash
-# bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
+    ```bash
+    # bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
 
 2. 제대로 설치되었는지 확인하면서, 업데이트를 합니다.
 
-```bash
-# bash
-brew update
-```
+    ```bash
+    # bash
+    brew update
+    ```
 
 ### M1 버전 
 
-Intel 방법으로 설치하면 업데이트시 `brew`를 찾을 수 없다고 나온다.
-
+Intel 방법으로 설치하면 업데이트시 `brew`를 찾을 수 없다고 나옵니다.
 ```bash
 zsh command not found brew
 ```
 
-1. 아래 방법을 이용해 설치할 수 있다.
-```zsh
-# We'll be installing Homebrew in the /opt directory.
-cd /opt
+1. 아래 방법을 이용해 설치할 수 있습니다.
 
-# Create a directory for Homebrew. This requires root permissions.
-sudo mkdir homebrew
+    ```zsh
+    # We'll be installing Homebrew in the /opt directory.
+    cd /opt
 
-# Make us the owner of the directory so that we no longer require root permissions.
-sudo chown -R $(whoami) /opt/homebrew
+    # Create a directory for Homebrew. This requires root permissions.
+    sudo mkdir homebrew
 
-# Download and unzip Homebrew. This command can be found at https://docs.brew.sh/Installation.
-curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+    # Make us the owner of the directory so that we no longer require root permissions.
+    sudo chown -R $(whoami) /opt/homebrew
 
-# Add the Homebrew bin directory to the PATH. If you don't use zsh, you'll need to do this yourself.
-echo "export PATH=/opt/homebrew/bin:$PATH" >> ~/.zshrc
-```
+    # Download and unzip Homebrew. This command can be found at https://docs.brew.sh/Installation.
+    curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+
+    # Add the Homebrew bin directory to the PATH. If you don't use zsh, you'll need to do this yourself.
+    echo "export PATH=/opt/homebrew/bin:$PATH" >> ~/.zshrc
+    ```
 
 2. 터미널을 재실행하거나, 쉘 설정을 업데이트합니다.
 
-```bash
-source ~/.zshrc
-```
+    ```bash
+    source ~/.zshrc
+    ```
 
 3. 제대로 설치되었는지 확인하면서, 업데이트합니다.
 
-```bash
-# bash
-brew update
-```
+    ```bash
+    # bash
+    brew update
+    ```
 
 4. Homebrew dependency 설치합니다.
 
-```
-brew install libjpeg openblas openssl readline sqlite3 xz zlib
-```
+    ```
+    brew install libjpeg openblas openssl readline sqlite3 xz zlib
+    ```
 
 ## 응용프로그램 설치하기
 
@@ -110,15 +110,15 @@ Homebrew를 이용해서 응용프로그램을 설치할 수 있습니다. (주�
 
 1. `cask`라는 것을 설치한다.
 
-```zsh
-brew install cask
-```
+    ```zsh
+    brew install cask
+    ```
 
 2. Iterm2, Slack, Chrome, VSCode, spectacle, keepingyouawake, karabiner-elements를 설치한합니다.
 
-```zsh
-brew install --cask iterm2 slack google-chrome visual-studio-code spectacle keepingyouawake karabiner-elements
-```
+    ```zsh
+    brew install --cask iterm2 slack google-chrome visual-studio-code spectacle keepingyouawake karabiner-elements
+    ```
 
 * spectacle [맥에서 이중창 하기]
 * keepingyouawake [맥 꺼짐 방지]
@@ -144,7 +144,7 @@ oh-my-zsh 설치시 `~/.zshrc`를 새롭게 생성합니다. (주의!!)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-### pyenv
+### pyenv 설치 & 세팅하기
 
 (현재 아래 방법대로 M1에서 설치하고, numpy 설치를 못 하고 있습니다.)
 
@@ -152,33 +152,34 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 1. brew를 이용해 설치합니다.
 
-```zsh
-brew install pyenv pyenv-virtualenv
-```
+    ```zsh
+    brew install pyenv pyenv-virtualenv
+    ```
 
 2. `~/.zshrc`를 열어 경로를 추가합니다.
 
-```zsh
-vim ~/.zshrc
-```
+    ```zsh
+    vim ~/.zshrc
+    ```
 
-아래 내용을 추가합니다.
-```
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-```
+    아래 내용을 추가합니다.
+    ```
+    export PATH="$HOME/.pyenv/bin:$PATH"
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+    ```
 
 3. 파이썬 3.8.6를 설치합니다.
 
-```zsh
-pyenv install 3.8.6
-```
+    ```zsh
+    pyenv install 3.8.6
+    ```
 
 4. 설치한 버전을 바탕으로 환경을 만듭니다.
-```zsh
-pyenv virtualenv 3.8.6 env
-```
+
+    ```zsh
+    pyenv virtualenv 3.8.6 env
+    ```
 
 ### 오류 해결하기
 
@@ -208,32 +209,33 @@ Results logged to /var/folders/dq/w4l2nqb95vd3k4dgp04dnt600000gn/T/python-build.
 ```
 
 
-아래로 해결했습니다. [참고자료](https://github.com/pyenv/pyenv/issues/1768)
+아래로 해결했습니다.
 ```
 pyenv install --patch 3.8.6 <<(curl -sSL https://raw.githubusercontent.com/Homebrew/formula-patches/113aa84/python/3.8.3.patch\?full_index\=1)
 ```
 
 
-### git
+### git 설치하기
 
 1. brew를 이용해 설치합니다.
 
-```zsh
-brew install git
-```
+    ```zsh
+    brew install git
+    ```
 
 2. config 설정합니다.
 
-```zsh
-git config --global user.name "LEEMINJOO"
-git config --global user.email "leeminjoo@example.com"
-```
+    ```zsh
+    git config --global user.name "LEEMINJOO"
+    git config --global user.email "leeminjoo@example.com"
+    ```
 
-### git - two-factor 설정
+### git - two-factor 설정하기
 
-[https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
+* [https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 
 
 ## 참고 자료
 * [https://whitepaek.tistory.com/3](https://whitepaek.tistory.com/3)
 * [https://velog.io/@mordred/Apple-M1-Mac%EC%97%90%EC%84%9C-HomeBrew-%EC%84%A4%EC%B9%98](https://velog.io/@mordred/Apple-M1-Mac%EC%97%90%EC%84%9C-HomeBrew-%EC%84%A4%EC%B9%98)
+* [https://github.com/pyenv/pyenv/issues/1768](https://github.com/pyenv/pyenv/issues/1768)

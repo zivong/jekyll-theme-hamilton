@@ -7,7 +7,7 @@ categories: 파이썬으로-업비트-자동매매
 
 이번 포스트에서는 자동으로 현재가로 매수하고, 1퍼센트 수익이 생기는 시점에 매도하는 프로그램을 만들어보겠습니다.
 
-전테 코드는 [Github](https://github.com/LEEMINJOO/only-trading-is-life-way/blob/main/src/trader/basic_trader.py에서 확인 가능합니다.
+전테 코드는 [Github](https://github.com/LEEMINJOO/only-trading-is-life-way/blob/main/src/trader/basic_trader.py)에서 확인 가능합니다.
 
 ## 자동매매 Trader 만들기
 
@@ -249,4 +249,4 @@ class BasicTrader:
 
 다음 포스트에서는 잠든 사이에도 자동으로 매수/매도 하는 Trader를 만들어 보기 전에 Trader의 수익률 성능을 확인하기 위한 백테스트를 소개하겠습니다.
 
-전테 코드는 [Github](https://github.com/LEEMINJOO/only-trading-is-life-way/blob/main/src/trader/basic_trader.py에서 확인 가능합니다.
+전테 코드는 [Github](https://github.com/LEEMINJOO/only-trading-is-life-way/blob/main/src/trader/basic_trader.py)에서 확인 가능합니다.

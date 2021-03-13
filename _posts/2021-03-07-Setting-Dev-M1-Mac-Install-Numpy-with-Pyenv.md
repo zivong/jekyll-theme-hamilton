@@ -10,7 +10,9 @@ priority : 1.0
 
 지난 포스트 [M1 Mac 세팅하기 - Homebrew, pyenv, numpy]({% post_url 2021-03-04-Setting-M1-Mac %})에서 기본적인 Mac 세팅방법을 알아보았습니다. 
 
-이번 포스트에서는 pyenv에 `numpy`등 python package 설치방법을 정리했습니다. 
+이번 포스트에서는 Rosetta(로제타) 없이 pyenv로 `numpy`등 python package 설치방법을 정리했습니다. 
+
+pyenv로 conda 환경을 만들어서 실행하는 방법입니다. pyenv를 설치하지 않았다면 brew을 이용해 conda를 바로 설치하면 됩니다.
 
 주먹구구 해결법으로 더 좋은 방법을 찾는다면 이후 수정해서 업로드 예정입니다.
 

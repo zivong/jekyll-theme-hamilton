@@ -8,5 +8,6 @@ tags: [Intro]
 
 1. [업비트 API 사용하기]({% post_url 2021-01-30-Upbit-API %})
 2. [파이썬으로 업비트 거래하기]({% post_url 2021-02-07-pyupbit-intro %})
-3. 자동매매 5% 수익내기
-4. ...
+3. [자동매매 1% 수익내기]({% post_url 2021-03-13-Automatically-earn-1-percent %})
+4. 백테스트로 Trader 성능 확인하기
+5. ...

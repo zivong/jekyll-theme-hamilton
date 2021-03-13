@@ -105,7 +105,7 @@ print 결과를 통해 설치가 잘 완료됐는지 확인합니다.
 ```python
 access_key = "???" 
 secret_key = "???"
-upbit = Upbit(access_key, secret_key)
+upbit = pyupbit.Upbit(access_key, secret_key)
 ```
 
 ### 3.2 잔고 조회하기
@@ -167,4 +167,4 @@ upbit = Upbit(access_key, secret_key)
 </figure>
 
 이번 포스트에서는 `pyupbit` 라이브러리를 활용해 가격을 조회하고, 시장가로 매수/매도 하는 방법에 대해 알아보았습니다. <br>
-다음 포스트에소는 단순한 매수/매도 trigger를 한가지 설정하고, trigger point에서 자동으로 매매하는 python class를 작성해보겠습니다.
+[다음 포스트]({% post_url 2021-03-13-Automatically-earn-1-percent %})에서는 자동으로 매매하는 python class를 작성해보겠습니다.

@@ -83,4 +83,14 @@ Please carefully study the documentation linked above for further help.
     >>> import pandas as pd
     ```
 
-(M1 Mac으로 개발환경을 구성하는데 아직 어려움이 많이 있습니다. 저는 현재 서브 컴퓨터로 M1 Mac Mini를 사용 중 입니다. 구매 전 구글링으로 웬만한 것은 M1으로 가능하다는 것을 보고 구매 결정했습니다. 하지만 아직 가능하지만 쉽지 않은 환경인 것 같습니다. 메인 개발 환경을 M1 Mac으로 사용하는 것을 조금 더 고려해보시기 바랍니다.)
+## Apple 버전 Python 확인하기 
+
+위 과정으로 python 실행 시 Apple 버전의 Python이 실행됩니다.
+
+<figure>
+    <center>
+        <img src="/assets/imgs/mac/apple-python.png" 
+         width="90%" height="90%" alt=""/> 
+        <figcaption>Apple Python</figcaption>
+    </center>
+</figure>

@@ -146,13 +146,11 @@ class BasicTrader:
     >>> trader.ticker_balance
     ```
 
-<figure>
-    <center>
-        <img src="/assets/imgs/upbit/trader-1.png" 
-         width="70%" height="70%" alt=""/> 
-        <!-- <figcaption>잔고 조회 - 이더리움 매수 후</figcaption> -->
-    </center>
-</figure>
+   <figure>
+       <center>
+           <img src="/assets/imgs/upbit/trader-1.png" alt=""/> 
+       </center>
+   </figure>
 
 3. 시장가로 매수합니다.
 
@@ -166,13 +164,12 @@ class BasicTrader:
     >>> trader.sell()
     ```
 
-<figure>
-    <center>
-        <img src="/assets/imgs/upbit/trader-2.png" 
-         width="70%" height="70%" alt=""/> 
-        <!-- <figcaption>잔고 조회 - 이더리움 매수 후</figcaption> -->
-    </center>
-</figure>
+   <figure>
+       <center>
+           <img src="/assets/imgs/upbit/trader-2.png" alt=""/> 
+           <!-- <figcaption>잔고 조회 - 이더리움 매수 후</figcaption> -->
+       </center>
+   </figure>
 
 
 ## 자동매매 Trader로 1퍼센트 수익내기
@@ -204,8 +201,7 @@ class BasicTrader:
 
 <figure>
     <center>
-        <img src="/assets/imgs/upbit/trader-avg-price.png" 
-         width="70%" height="70%" alt=""/> 
+        <img src="/assets/imgs/upbit/trader-avg-price.png" alt=""/> 
     </center>
 </figure>
 

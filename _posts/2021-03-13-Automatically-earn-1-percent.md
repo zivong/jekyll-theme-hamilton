@@ -5,7 +5,7 @@ title: "자동매매로 가상화폐 1퍼센트 수익내기"
 categories: 파이썬으로-업비트-자동매매
 ---
 
-이번 포스트에서는 자동으로 현재가로 매수하고, 1퍼센트 수익이 생기는 시점에 매도하는 프로그램을 만들어보겠습니다.
+이번 포스트에서는 업비트 API를 wrapping한 파이썬 라이브러리 `pyupbit`를 이용해 자동으로 현재가로 매수하고, 1퍼센트 수익이 생기는 시점에 매도하는 프로그램을 만들어보겠습니다.
 
 전테 코드는 [Github](https://github.com/LEEMINJOO/only-trading-is-life-way/blob/main/src/trader/basic_trader.py)에서 확인 가능합니다.
 
@@ -149,7 +149,7 @@ class BasicTrader:
 <figure>
     <center>
         <img src="/assets/imgs/upbit/trader-1.png" 
-         width="50%" height="50%" alt=""/> 
+         width="70%" height="70%" alt=""/> 
         <!-- <figcaption>잔고 조회 - 이더리움 매수 후</figcaption> -->
     </center>
 </figure>
@@ -169,7 +169,7 @@ class BasicTrader:
 <figure>
     <center>
         <img src="/assets/imgs/upbit/trader-2.png" 
-         width="50%" height="50%" alt=""/> 
+         width="70%" height="70%" alt=""/> 
         <!-- <figcaption>잔고 조회 - 이더리움 매수 후</figcaption> -->
     </center>
 </figure>
@@ -205,7 +205,7 @@ class BasicTrader:
 <figure>
     <center>
         <img src="/assets/imgs/upbit/trader-avg-price.png" 
-         width="50%" height="50%" alt=""/> 
+         width="70%" height="70%" alt=""/> 
     </center>
 </figure>
 
@@ -238,10 +238,20 @@ class BasicTrader:
 >>> trader.sell(price, volume)
 ```
 
-예약이 된 것을 확인 할 수 있습니다. 이후 거래 되면 추가 업로드 하겠습니다 ㅎㅎ
+예약이 된 것을 확인 할 수 있습니다. ~~이후 거래 되면 추가 업로드 하겠습니다 ㅎㅎ~~
 <figure>
     <center>
         <img src="/assets/imgs/upbit/trader-1-p.jpg" 
+         width="50%" height="50%" alt=""/> 
+    </center>
+</figure>
+
+
+다음날 새벽에 매도된것을 확인 할 수 있습니다.
+
+<figure>
+    <center>
+        <img src="/assets/imgs/upbit/1p-conclusion.png" 
          width="50%" height="50%" alt=""/> 
     </center>
 </figure>

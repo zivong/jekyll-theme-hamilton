@@ -9,4 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PORT: 4000
-    run: docker-compose up
+    steps:
+    - run: docker-compose up

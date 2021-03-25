@@ -1,6 +1,5 @@
 on:
-  push:
-    branches: [deploy]
+  pull_request:
 # 어느 브랜치에 푸시할때 동작할지
 name: Deploy
 

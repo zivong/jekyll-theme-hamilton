@@ -1,0 +1,13 @@
+on:
+  push:
+    branches: [deploy]
+	# 어느 브랜치에 푸시할때 동작할지
+name: Deploy to Amazon ECS
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    env:
+      PORT: 4000
+    run: docker-compose up

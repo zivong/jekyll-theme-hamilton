@@ -91,6 +91,7 @@ After installation, you can run `jekyll serve` to check out your site, but befor
 | `lang`     | string | The language of the site; The default value is `en`. |
 | `paginate` | int    | The number of posts on each page. |
 | `date_format` | string | The date format; The default value is `%b %-d, %Y`. |
+| `subscribe` | boolean | Show the subsribe feed button. |
 
 ## Archive Pages
 

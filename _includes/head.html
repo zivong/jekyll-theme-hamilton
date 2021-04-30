@@ -43,6 +43,53 @@
 {% endunless %}
 <!-- End selecting skin -->
 
+<!-- Keyboard navigation -->
+<script>
+  window.addEventListener("keydown", function (event) {
+    let maincontent = document.getElementById('site-main');
+    if (!event.metaKey && event.code === 'ArrowDown') {
+     maincontent.scrollBy({
+        top: 30
+      });
+    }
+    if (!event.metaKey && event.code === 'ArrowUp') {
+     maincontent.scrollBy({
+        top: -30
+      });
+    }
+    if (!event.shiftKey && event.code === 'Space') {
+     maincontent.scrollBy({
+        top: 300
+      });
+    }
+    if (event.shiftKey && event.code === 'Space') {
+     maincontent.scrollBy({
+        top: -300
+      });
+    }
+    if (event.ctrlKey && event.code === 'ArrowUp') {
+     maincontent.scrollTo({
+        top: 0
+      });
+    }
+    if (event.ctrlKey && event.code === 'ArrowDown') {
+     maincontent.scrollBy({
+        top: maincontent.scrollHeight
+      });
+    }
+    if (event.metaKey && event.code === 'ArrowUp') {
+     maincontent.scrollTo({
+        top: 0
+      });
+    }
+    if (event.metaKey && event.code === 'ArrowDown') {
+     maincontent.scrollBy({
+        top: maincontent.scrollHeight
+      });
+    }
+  });
+</script>
+
 <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
 
 {% include custom-head.html %}

@@ -9,9 +9,22 @@ html {
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
   margin: 0;
   padding: 0;
 }
@@ -19,9 +32,20 @@ dl, dd, ol, ul, figure {
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure, iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
+iframe,
 %vertical-rhythm {
   margin-bottom: $spacing-unit;
 }
@@ -31,11 +55,12 @@ ul, ol, dl, figure, iframe,
  */
 body {
   font-family: $base-font-family;
+  font-family: 'Nanum Gothic', sans-serif;
   -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-     -moz-font-feature-settings: "kern" 1;
-       -o-font-feature-settings: "kern" 1;
-          font-feature-settings: "kern" 1;
+  -webkit-font-feature-settings: 'kern' 1;
+  -moz-font-feature-settings: 'kern' 1;
+  -o-font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern' 1;
   font-kerning: normal;
   display: flex;
   min-height: 100vh;
@@ -46,8 +71,8 @@ body {
 
 p {
   -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 hr {
@@ -78,7 +103,8 @@ figcaption {
 /**
  * Lists
  */
-ul, ol {
+ul,
+ol {
   margin-left: $spacing-unit;
 }
 
@@ -112,7 +138,8 @@ blockquote {
     margin-bottom: 0;
   }
 
-  i, em {
+  i,
+  em {
     font-style: normal;
   }
 }
@@ -158,11 +185,12 @@ table {
   width: 100%;
   border-collapse: collapse;
   border: 1px solid;
-  
-  th, td {
+
+  th,
+  td {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
   }
-  
+
   th {
     border: 1px solid;
   }
@@ -180,7 +208,7 @@ ul.task-list {
     list-style-type: none;
 
     .task-list-item-checkbox {
-      margin: 0 .5em .25em -1.6em;
+      margin: 0 0.5em 0.25em -1.6em;
       vertical-align: middle;
     }
   }

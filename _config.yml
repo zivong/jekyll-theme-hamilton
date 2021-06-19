@@ -13,11 +13,11 @@ plugins:
 paginate: 10
 
 # Uncomment the below line and set the tracking ID for enabling Google Analytics
-# 
-# google_analytics: 
+#
+# google_analytics:
 
 # Uncomment the below lines and set the Disqus shortname for enabling Disqus
-# 
+#
 # disqus:
 
 # Jekyll
@@ -32,7 +32,7 @@ exclude:
 twitter:
   username: ngzhio
   card: summary
-logo: logo.png
+logo: logo.gif
 social:
   name: Shangzhi Huang
   links:

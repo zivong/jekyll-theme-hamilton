@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Some articles are just so short that we have to make the footer stick"
+title: "첫번째 글입니다. 폰트가 어떨지 궁금하네요."
 categories: misc
 ---
 

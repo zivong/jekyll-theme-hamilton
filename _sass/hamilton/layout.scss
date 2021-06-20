@@ -43,12 +43,7 @@
   @include relative-font-size(1.625);
   // font-family: 'Nanum Gothic', sans-serif;
   // font-family: $handwriting-font-family;
-  @font-face {
-    font-family: 'LAB디지털';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'Noto Sans KR', sans-serif;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;

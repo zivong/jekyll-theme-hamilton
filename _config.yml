@@ -1,8 +1,9 @@
-title: Hamilton
-description: A minimal and beautiful Jekyll theme best for writing and note-taking.
-author: Shangzhi Huang
+title: 와다다다
+description: Heeyeol's Blog
+author: Kim Heeyeol
+job: Front-end Engineer.
 avatar: /logo.png
-email: ngzhio@gmail.com
+email: khere220@gmail.com
 
 plugins:
   - jekyll-seo-tag
@@ -13,11 +14,11 @@ plugins:
 paginate: 10
 
 # Uncomment the below line and set the tracking ID for enabling Google Analytics
-# 
-# google_analytics: 
+#
+# google_analytics:
 
 # Uncomment the below lines and set the Disqus shortname for enabling Disqus
-# 
+#
 # disqus:
 
 # Jekyll
@@ -38,6 +39,6 @@ social:
   links:
     - https://twitter.com/ngzhio
     - https://www.facebook.com/ngzhio
-    - https://github.com/ngzhio
+    - https://github.com/Kim-Heeyeol
 google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
 lang: en

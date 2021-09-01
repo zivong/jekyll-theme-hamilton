@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-09-01T03:15:08+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hamilton</title><subtitle>A minimal and beautiful Jekyll theme best for writing and note-taking.</subtitle><author><name>Shangzhi Huang</name></author><entry><title type="html">Primera Publicación</title><link href="http://localhost:4000/2021/09/01/Primer-Post.html" rel="alternate" type="text/html" title="Primera Publicación" /><published>2021-09-01T00:00:00+01:00</published><updated>2021-09-01T00:00:00+01:00</updated><id>http://localhost:4000/2021/09/01/Primer-Post</id><content type="html" xml:base="http://localhost:4000/2021/09/01/Primer-Post.html">&lt;p&gt;Bienvenidos a mi Github.&lt;br /&gt;
+Estare encantado de compartir tutoriales.&lt;br /&gt;
+Espero que aprendáis de mí y yo aprenderé de ustedes. &lt;br /&gt;
+Acepto todo tipo de críticas siempre y cuando sea sin insultar. &lt;br /&gt;&lt;/p&gt;</content><author><name>Shangzhi Huang</name></author><category term="to-do list" /><summary type="html">Bienvenidos a mi Github. Estare encantado de compartir tutoriales. Espero que aprendáis de mí y yo aprenderé de ustedes. Acepto todo tipo de críticas siempre y cuando sea sin insultar.</summary></entry><entry><title type="html">Task Item List</title><link href="http://localhost:4000/2016/01/11/task-item-list.html" rel="alternate" type="text/html" title="Task Item List" /><published>2016-01-11T00:00:00+00:00</published><updated>2016-01-11T00:00:00+00:00</updated><id>http://localhost:4000/2016/01/11/task-item-list</id><content type="html" xml:base="http://localhost:4000/2016/01/11/task-item-list.html">&lt;p&gt;This post tests the style of a task item list.&lt;/p&gt;
+
+&lt;p&gt;Source:&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; [x] Eating
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; [ ] Walking
+&lt;span class=&quot;p&quot;&gt;  -&lt;/span&gt; [ ] Running
+&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; [ ] Sleeping
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Rendered:&lt;/p&gt;
+
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Eating&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Walking
+    &lt;ul class=&quot;task-list&quot;&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Running&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Sleeping&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Shangzhi Huang</name></author><category term="to-do list" /><summary type="html">This post tests the style of a task item list.</summary></entry></feed>

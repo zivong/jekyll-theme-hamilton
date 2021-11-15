@@ -29,15 +29,10 @@ exclude:
 
 # Jekyll SEO Tag (Optional)
 # =========================
-twitter:
-  username: ngzhio
-  card: summary
+mail: hyey0218@daum.net
 logo: logo.png
 social:
-  name: Shangzhi Huang
+  name: 유니의 갬성 개발
   links:
-    - https://twitter.com/ngzhio
-    - https://www.facebook.com/ngzhio
-    - https://github.com/ngzhio
-google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
-lang: en
+    - https://hyey0218.github.io
+lang: 

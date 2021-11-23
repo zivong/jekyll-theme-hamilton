@@ -2,3 +2,15 @@
 ---
 
 @import "hamilton/main";
+
+.site-body {
+    display: grid;
+    grid-template-columns: calc(1100px * 0.14) 1fr;
+    overflow: hidden;
+    }
+    @media screen and (max-width: 900px) {
+      .site-body {
+        grid-template-columns: calc(1100px * 0.18) 1fr; } }
+    @media screen and (max-width: 600px) {
+      .site-body {
+        grid-template-columns: 1fr; } }

@@ -1,0 +1,69 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{% comment %} Check the type of archive {% endcomment %}
+  {%- assign taxonomies = site.categories -%}
+
+{% comment %} Calculate the max count of taxonomies {% endcomment %}
+{%- assign max_count = 0 -%}
+{%- for taxonomy in taxonomies -%}
+  {%- assign posts = taxonomy[1] -%}
+  {%- if posts.size > max_count -%}
+    {%- assign max_count = posts.size -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<div class="taxonomies-wrapper">
+  <ul class="taxonomies">
+    {%- for i in (1..max_count) reversed -%}
+      {%- for taxonomy in taxonomies -%}
+        {%- assign taxonomy_name = taxonomy[0] -%}
+        {%- assign slugified_taxonomy_name = taxonomy_name | slugify -%}
+        {%- assign posts = taxonomy[1] -%}
+        {%- if posts.size == i and taxonomy_name == page.type -%}
+          <li>
+            {%- capture link -%}{{ page.permalink }}#{{ slugified_taxonomy_name }}{%- endcapture -%}
+            <a class="taxonomy" href="{{ link | relative_url }}">
+              <span>
+                  {{ taxonomy_name }}
+              </span>
+              <span class="taxonomy-count">{{ posts.size }}</span>
+            </a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+  </ul>
+</div>
+
+{% comment %} Show posts by taxonomy {% endcomment %}
+{%- for i in (1..max_count) reversed -%}
+  {%- for taxonomy in taxonomies -%}
+    {%- assign taxonomy_name = taxonomy[0] -%}
+    {%- assign slugified_taxonomy_name = taxonomy_name | slugify -%}
+    {%- assign posts = taxonomy[1] -%}
+    {%- if posts.size == i and taxonomy_name == page.type -%}
+      <h2 id="{{ slugified_taxonomy_name }}">
+          {{ taxonomy_name }}
+      </h2>
+      <ul class="post-list-by-taxonomy">
+        {%- for post in posts -%}
+          <li>
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> &raquo; <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+      <a href="#" onclick="backToTop()" class="back-to-top">Top &#8648;</a>
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+
+<script>
+  function backToTop() {
+    const main = document.getElementById("site-main");
+    main.scrollTop = 0;
+  }
+</script>

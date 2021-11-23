@@ -1,0 +1,8 @@
+1. jekyll 설치
+ - gem install bundler jekyll
+
+2. jekyll 프로젝트 설치
+3. 의존 라이브러리 install & update
+
+4. start
+> jekyll serve

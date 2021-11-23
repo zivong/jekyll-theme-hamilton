@@ -1,0 +1,59 @@
+< Liquid Language Usage >
+
+1. Relative URL
+입력값 앞에 baseurl 값을 추가한다. 사이트가 최상위 경로가 아닌 하위 경로에서 호스팅 될 경우 유용하다.
+{{ "/assets/style.css" | relative_url }}
+=> /my-baseurl/assets/style.css
+
+
+
+2. Absolute URL
+입력값 앞에 url 과 baseurl 값을 추가한다.
+{{ "/assets/style.css" | absolute_url }}
+=> http://example.com/my-baseurl/assets/style.css
+
+
+
+3. Date
+to XML Schema
+{{ site.time | date_to_xmlschema }}
+2008-11-07T13:07:54-08:00
+
+to RFC-822 Format
+{{ site.time | date_to_rfc822 }}
+Mon, 07 Nov 2008 13:07:54 -0800
+
+to String
+{{ site.time | date_to_string }}
+07 Nov 2008
+
+to String in ordinal US style
+{{ site.time | date_to_string: "ordinal", "US" }}
+Nov 7th, 2008
+
+to Long String
+{{ site.time | date_to_long_string }}
+07 November 2008
+
+to Long String in ordinal UK style
+{{ site.time | date_to_long_string: "ordinal" }}
+7th November 2008
+
+
+
+4. Where Expression
+배열 안에서 특정 키와 값을 가진 객체들을 선택한다.
+{{ site.members | where:"graduation_year","2014" }}
+
+
+{{ site.members | where_exp:"item",
+"item.graduation_year == 2014" }}
+
+{{ site.members | where_exp:"item",
+"item.graduation_year < 2014" }}
+
+{{ site.members | where_exp:"item",
+"item.projects contains 'foo'" }}
+
+
+5. 

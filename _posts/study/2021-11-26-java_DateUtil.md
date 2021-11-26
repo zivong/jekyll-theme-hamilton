@@ -5,7 +5,7 @@ title: java 만능 DateUtil 만들기
 categories: study
 ---
 
-##2 LocalDate 와 LocalDateTime 그리고 DateTimeFormatter
+## LocalDate 와 LocalDateTime 그리고 DateTimeFormatter
 
 * LocalDate
 > API : https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html
@@ -17,7 +17,7 @@ categories: study
 > API : https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html
 
 ---
-##2 사용
+## 사용
 
 문서의 수정일/생성일이나 메일의 발신일이 다양한 패턴으로 들어오는 경우가 있었다.
 

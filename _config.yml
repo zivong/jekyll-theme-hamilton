@@ -1,8 +1,8 @@
-title: Hamilton
-description: A minimal and beautiful Jekyll theme best for writing and note-taking.
-author: Shangzhi Huang
+title: Dionatan Resende
+description: Portfólio.
+author: Dionatan Diego
 avatar: /logo.png
-email: ngzhio@gmail.com
+email: dionatanderesende@gmail.com
 
 plugins:
   - jekyll-seo-tag
@@ -30,14 +30,14 @@ exclude:
 # Jekyll SEO Tag (Optional)
 # =========================
 twitter:
-  username: ngzhio
+  username: dionatandiego11
   card: summary
 logo: logo.png
 social:
   name: Shangzhi Huang
   links:
-    - https://twitter.com/ngzhio
-    - https://www.facebook.com/ngzhio
-    - https://github.com/ngzhio
+     - https://twitter.com/dionatandiego11
+    # - https://www.facebook.com/ngzhio
+    - https://github.com/dionatandiego11
 google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
-lang: en
+lang: pt-br

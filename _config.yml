@@ -1,5 +1,5 @@
-title: Dionatan Diego
-description: A minimal and beautiful Jekyll theme best for writing and note-taking.
+title: Dionatan Resende
+description: Portfólio.
 author: Dionatan Diego
 avatar: /logo.png
 email: dionatanderesende@gmail.com
@@ -30,13 +30,13 @@ exclude:
 # Jekyll SEO Tag (Optional)
 # =========================
 twitter:
-  username: ngzhio
+  username: dionatandiego11
   card: summary
 logo: logo.png
 social:
   name: Shangzhi Huang
   links:
-    # - https://twitter.com/ngzhio
+     - https://twitter.com/dionatandiego11
     # - https://www.facebook.com/ngzhio
     - https://github.com/dionatandiego11
 google_site_verification: u4WXQl0Eu66rsQo2kRdCNx

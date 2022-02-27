@@ -1,6 +1,6 @@
 - title: Kaggle
   url: https://www.kaggle.com/clarksaben
-  icon: fab fa-fw fa-kaggle
+  icon: fa-brands fa-kaggle
 - title: GitHub
   url: https://github.com/csaben/nn-research
   icon: fab fa-github

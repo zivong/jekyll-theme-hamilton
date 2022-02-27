@@ -32,10 +32,10 @@ layout: default
               </a>
           {%- endif -%}
         </p>
-        {%- if post.show_excerpts != true -%}
+        <!-- {%- if post.show_excerpts != false -%}
           <div class="post-excerpt">{{ post.excerpt | strip_html }}</div>
         {%- endif -%}
-        <!-- was false, trying to remove the excerpts -->
+        was false, trying to remove the excerpts -->
       </li>
       {%- endfor -%}
     </ul>

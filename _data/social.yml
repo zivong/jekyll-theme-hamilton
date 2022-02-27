@@ -1,6 +1,10 @@
 - title: Kaggle
   url: https://www.kaggle.com/clarksaben
-  icon: fab fa-kaggle
+  icon: fab fa-fw fa-kaggle
 - title: GitHub
   url: https://github.com/csaben/nn-research
   icon: fab fa-github
+- title: Linkedin
+  icon: fab fa-fw fa-linkedin
+  url: https://www.linkedin.com/in/clark-saben-9b353020a/
+

@@ -1,6 +1,6 @@
-- title: Twitter
-  url: https://twitter.com/ngzhio
-  icon: fab fa-twitter
+- title: Kaggle
+  url: https://www.kaggle.com/clarksaben
+  icon: fab fa-kaggle
 - title: GitHub
-  url: https://github.com/ngzhio/jekyll-theme-hamilton
+  url: https://github.com/csaben/nn-research
   icon: fab fa-github

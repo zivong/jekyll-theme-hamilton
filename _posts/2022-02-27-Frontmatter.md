@@ -1,4 +1,8 @@
 ---
+layout: post
+---
+<!-- 
+
 title : "Introduction to Spring Research Posts"
 
 category :
@@ -13,7 +17,7 @@ use_math : true
 #   teaser : https://static1.squarespace.com/static/57dc396a03596e8da9fe6b73/t/57eef283b3db2ba633355a07/1480477568336/UBC_Bands.jpg
 #   overlay_image : https://static1.squarespace.com/static/57dc396a03596e8da9fe6b73/t/57eef283b3db2ba633355a07/1480477568336/UBC_Bands.jpg
 published : true
----
+--- -->
 This should be a sub-heading from the homepage
 
 What is this project?

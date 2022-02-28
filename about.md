@@ -4,4 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Another minimal style of Jekyll theme for writers.
+I attend UMW as a sophomore
+
+Majors
+- Math
+- Physics
+
+Focuses:
+- Machine learning
+- Differential Equations 

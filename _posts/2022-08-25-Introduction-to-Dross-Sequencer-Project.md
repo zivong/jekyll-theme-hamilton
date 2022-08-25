@@ -17,7 +17,7 @@ My intent with this project is to build a framework that allows me to still
 add new minigoals and projects while not having to worry about how to fit them
 into the larger puzzle of my life.
 
-Dross is mind spirit in a favorite book of mine, Cradle. And it feels appropriate
+Dross is a mind spirit in a favorite book of mine, Cradle. And it feels appropriate
 to name this personal scheduler after him akin to how he generates battle plans
 in the book.
 

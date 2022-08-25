@@ -35,7 +35,7 @@ I'll be organizing the food based on the following information;
 
 (one day I will have to cover things in this list with some depth to give context)
 
-=====================================================================
+___
 
 ### Courses List ###
 <ul>
@@ -48,7 +48,7 @@ I'll be organizing the food based on the following information;
 <li>Deep Learning w/ Python</li>
 </ul>
 
-=====================================================================
+___
 
 ### Goal Associated with List ###
 <ul>
@@ -65,7 +65,7 @@ I'll be organizing the food based on the following information;
 *can and will be added to (NDE kidger paper, structure function specifics go with tasking)* 
 </ul>
 
-=====================================================================
+___
 
 ### Tasks ###
 <ul>

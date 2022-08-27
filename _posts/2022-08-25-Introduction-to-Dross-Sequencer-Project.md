@@ -1,5 +1,6 @@
 ---
 layout: post
+toc: true
 category: Slice-of-Life
 tag :
   - dross

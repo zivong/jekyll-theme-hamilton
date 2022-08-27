@@ -31,6 +31,9 @@ Personal
 <li>making loss functions, defining backprop for them, and creating a vimscript loss fn list</li>
 <li>cron job for dataset pulling for simulacra collect.py</li>
 <li>cron job for samsung note downloader</li>
+<li>Deasy google maps pane extraction for local google maps</li>
+<li>Port nvim kaggle comp config to ubuntu for GPU access locally</li>
+<li>Geohotz tiny voice model for first half of Dross voice recognition</li>
 </ul>
 
 

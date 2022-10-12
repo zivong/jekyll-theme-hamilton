@@ -3,7 +3,7 @@ description: 미니멀리즘 쩔어
 author: 아몰라
 avatar: /logo.png
 email: htmsejong@gmail.com
-
+skin: Daylight
 plugins:
   - jekyll-seo-tag
   - jekyll-feed

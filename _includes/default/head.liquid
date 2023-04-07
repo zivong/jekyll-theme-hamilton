@@ -1,0 +1,96 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
+
+    <!-- Theme Mode-->
+    {% if site.color_theme == 'auto' %}
+    <script>
+        const isAutoTheme = true;
+        document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
+    </script>
+    {% else %}
+    <script>
+        const isAutoTheme = false;
+        document.documentElement.setAttribute('data-theme', "{{ site.color_theme | default: 'light' }}")
+    </script>
+    {% endif %}
+
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="{{ site.favicon | relative_url }}" type="image/x-icon">
+
+    {% if page.bootstrap %}
+    <!-- Bootstrap-4.1.3 isolation CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/vendor/bootstrap-iso.min.css' | relative_url }}">
+    <!-- JQuery 3.3.1 -->
+    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Bootstrap 4.1.3 compiled and minified JavaScript -->
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Popper, a dependency of Bootstrap-->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    {% endif %}
+
+    <!-- KaTeX 0.15.2 -->
+    {% if site.katex or site.theme_settings.katex %}
+    <script defer src="{{ '/assets/js/vendor/katex.min.js' | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/vendor/auto-render.min.js' | relative_url }}" onload="renderMathInElement(document.body);"></script>
+    {% endif %}
+
+    <!-- Mermaid 9.1.1 -->
+    {% if site.mermaid %}
+    <script defer src="{{ '/assets/js/vendor/mermaid.min.js' | relative_url }}" onload="mermaid.initialize({
+      startOnLoad:true,
+      theme: '{{ site.mermaid }}',
+    });"></script>
+    {% endif %}
+
+    <!-- Simple Jekyll Search 1.10.0 -->
+    <script src="{{ '/assets/js/vendor/simple-jekyll-search.min.js' | relative_url }}" type="text/javascript"></script>
+
+    <!-- Google Analytics / Cookie Consent -->
+    <script>
+      const cookieName = 'cookie-notice-dismissed-{{ site.url }}';
+      const isCookieConsent = '{{ site.cookie_consent }}';
+      const analyticsName = '{{ site.google_analytics }}';
+      const analyticsNameGA4 = '{{ site.google_analytics_ga4 }}';
+    </script>
+
+    {% if site.cookie_consent %}
+        <span id="cookie-notice"><span>{{ site.data.language.str_cookie_disclaimer | default: "We would like to use third party cookies and scripts to improve the functionality of this website." }}
+          </span><a id="cookie-notice-accept" class="button">{{ site.data.language.str_cookie_approve | default: "Approve" }}</a>
+        </span>
+    {% endif %}
+    {% if site.google_analytics %}
+        <!-- Global site tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+        <!-- Page analysis (analytics.js) -->
+        <script async src='https://www.google-analytics.com/analytics.js'></script>
+    {% endif %}
+
+    <!-- seo tags -->
+    <meta property="og:image" content="{{ '/' | absolute_url }}{% if page.thumbnail %}{{ page.thumbnail }}{% else %}{{ page.feature-img | default: site.header_feature_image }}{% endif %}">
+    {% unless page.layout == post %}
+    <meta property="og:type" content="website" />
+    {% endunless %}
+    {% seo %}
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title | default: 'Title' }}" href="{{ 'feed.xml' | absolute_url }}"/>
+    {% feed_meta %}
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+    <meta name="twitter:description" content="{{ page.content | strip_html | strip_newlines | truncate: 160 | default: site.header_text}}">
+    {% if site.data.social.twitter %}
+    <meta name="twitter:creator" content="@{{ site.data.social.twitter }}">
+    <meta name="twitter:site" content="@{{ site.data.social.twitter }}">
+    {% endif %}
+    <meta name="twitter:card" content="{% unless page.thumbnail %}summary{% else %}summary_large_image{% endunless %}">
+    <meta name="twitter:image" content="{{ '/' | absolute_url }}{% if page.thumbnail %}{{ page.thumbnail }}{% else %}{{ page.feature-img | default: site.header_feature_image }}{% endif %}">
+    <meta name="twitter:image:alt" content="{{ page.title | default: site.title }}">
+</head>

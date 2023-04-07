@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: ㅠㅠ 아 몰랑
 permalink: /about/
 ---
 

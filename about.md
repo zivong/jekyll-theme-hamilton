@@ -1,7 +1,5 @@
 ---
 layout: page
-title: About
+title: 깃헙 블로그
 permalink: /about/
 ---
-
-Another minimal style of Jekyll theme for writers.

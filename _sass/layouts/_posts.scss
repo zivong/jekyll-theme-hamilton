@@ -1,0 +1,157 @@
+.comments {
+  @extend %padding-post;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  float: left;
+  width: 100%;
+}
+
+article {
+  @extend .comments;
+
+  header {
+    margin-bottom: 6%;
+    text-align: center;
+  }
+
+  a:hover {
+    @extend .body-link;
+  }
+
+  .footnotes {
+    font-size: 0.9em;
+  }
+}
+
+footer {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.9em;
+  display: inline-block;
+  text-align: center;
+
+  .meta {
+    display: inline;
+  }
+
+  a.button {
+    margin-left: 1em;
+  }
+}
+
+header {
+  h1 {
+    margin: 0;
+  }
+}
+
+.meta {
+  color: var(--meta);
+  letter-spacing: 0.1em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* --- Post info --- */
+.post-info {
+  /* For border in author
+  border: 1px solid var(--border);
+  padding-left: 0.5em;
+  */
+  border-radius: 1em;
+  padding-right: 0.5em;
+  display: inline-flex;
+
+  a {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: auto;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  img {
+    border-radius: 1em;
+    padding: 0;
+    width: 1.5em;
+    height: 100%;
+    margin-right: 0.5em;
+  }
+}
+
+/* --- Feature image --- */
+.feature-image {
+  padding: 0;
+
+  .post-link {
+    color: var(--header-text);
+  }
+
+  h1.title, .post-info {
+    @extend .txt-shadow;
+  }
+
+  header {
+    color: var(--header-text);
+    margin-bottom: 0;
+    padding: $padding-large/2.5 $padding-large;
+
+    .meta {
+      color: var(--header-text);
+      filter: opacity(0.7);
+    }
+  }
+
+  .post-content {
+    @extend %padding-post;
+    padding-bottom: 0;
+  }
+
+  footer {
+    @extend %padding-post;
+    padding-top: 0;
+  }
+
+  .feature-image-padding {
+    padding: $feature-image-padding;
+  }
+}
+
+/*-- feature-image Responsive scrolling --*/
+.feature-image header {
+  @media screen and (max-width: $break) {
+    padding: $padding-large*1.5 $padding-small;
+  }
+
+  @media screen and (min-width: $break) {
+    background-size: 120% auto;
+  }
+
+  @media screen and (max-width: $break) {
+    background-size: 200% auto;
+  }
+
+  @media screen and (max-width: $sm-break) {
+    background-size: 400% auto;
+  }
+}
+
+.post-content {
+  h1 { color: var(--h1); }
+  h2 { color: var(--h2); }
+  h3 { color: var(--h3); }
+  h4 { color: var(--h4); }
+  h5 { color: var(--h5); }
+  h6 { color: var(--h6); }
+
+  a {
+    :visited {
+      filter: saturate(0.7);
+    }
+  }
+}

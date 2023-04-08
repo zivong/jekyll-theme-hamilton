@@ -1,0 +1,304 @@
+// ==========================================================================
+//   Syntax highlighting
+// ==========================================================================
+
+div.highlighter-rouge,
+figure.highlight,
+.highlight code {
+  position: relative;
+  background: var(--base00);
+  color: var(--base07);
+  font-family: $monospace;
+  font-size: $font-size-code;
+  line-height: $font-height-code;
+  border-radius: $border-radius;
+
+
+  > pre,
+  pre.highlight {
+    margin: 0;
+    padding: 1em;
+  }
+}
+
+li .highlight * {
+  font-size: 14px;
+}
+
+pre .rouge-table,
+.highlight pre,
+.code pre {
+  margin: 0;
+  overflow: auto;
+}
+
+.rouge-table * {
+  font-size: 1em;
+}
+
+li div.highlighter-rouge {
+  margin-top: 0.5em;
+}
+
+div.highlighter-rouge,
+figure.highlight {
+  margin-bottom: 1em;
+}
+
+code.highlighter-rouge {
+  padding: 0.2em 0.4em;
+  font-size: $font-size-code;
+  background-color: var(--code-background);
+  color: var(--code-inline);
+  border-radius: 2px;
+  font-family: $monospace;
+  //filter: invert(100%) contrast(200%);
+}
+
+table.rouge-table {
+  margin-bottom: 0;
+  font-size: 1em;
+  width: 100%;
+  border: 0;
+
+  td {
+    padding: 0;
+    width: calc(100% - 1em);
+    border: 0;
+    /* line numbers*/
+    &.gutter,
+    &.rouge-gutter {
+      padding-right: 1em;
+      width: 2em;
+      color: var(--base04);
+      border-right: 1px solid var(--base04);
+      text-align: right
+    }
+
+    /* code */
+    &.code,
+    &.rouge-code {
+      padding-left: 1em
+    }
+  }
+
+  pre {
+    margin: 0
+  }
+}
+
+.highlight pre {
+  width: 100%;
+
+  ::selection {
+    background-color: var(--base02)
+  }
+}
+
+.highlight .hll {
+  background-color: var(--base06)
+}
+
+.highlight {
+  .bp{ /* Name.Builtin.Pseudo */
+    color: var(--base0c)  }
+  .c { /* Comment */
+    color: var(--base03) }
+  .cm{ /* Comment.Multiline */
+    color: var(--base03)  }
+  .cp{ /* Comment.Preproc */
+    color: var(--base03)  }
+  .c1{ /* Comment.Single */
+    color: var(--base03)  }
+  .cs{ /* Comment.Special */
+    color: var(--base03)  }
+  .dl{ /* String.Quotes 8 */
+    color: var(--base0a)  }
+  .err { /* Error */
+    color: var(--base0c) }
+  .gd{ /* Generic.Deleted */
+    color: var(--base0c)  }
+  .ge{ /* Generic.Emph */
+    font-style: italic  }
+  .gh{ /* Generic.Heading */
+    color: var(--base07);font-weight: bold  }
+  .gi{ /* Generic.Inserted */
+    color: var(--base0a)  }
+  .gp{ /* Generic.Prompt */
+    color: var(--base04);font-weight: bold  }
+  .gs{ /* Generic.Strong */
+    font-weight: bold  }
+  .gu{ /* Generic.Subheading */
+    color: var(--base08);font-weight: bold  }
+  .il{ /* Literal.Number.Integer.Long */
+    color: var(--base0e)  }
+  .k { /* Keyword */
+    color: var(--base0d) }
+  .kc{ /* Keyword.Constant */
+    color: var(--base0f)  }
+  .kd{ /* Keyword.Declaration */
+    color: var(--base0d)  }
+  .kn{ /* Keyword.Namespace */
+    color: var(--base0d)  }
+  .kp{ /* Keyword.Pseudo */
+    color: var(--base0d)  }
+  .kr{ /* Keyword.Reserved */
+    color: var(--base0d)  }
+  .kt{ /* Keyword.Type */
+    color: var(--base09)  }
+  .l{ /* Literal */
+    color: var(--base0e)  }
+  .ld{ /* Literal.Date */
+    color: var(--base0a)  }
+  .m{ /* Literal.Number */
+    color: var(--base0e)  }
+  .mb{ /* Literal.Bytes */
+    color: var(--base0e)  }
+  .mf{ /* Literal.Number.Float */
+    color: var(--base0e)  }
+  .mh{ /* Literal.Number.Hex */
+    color: var(--base0e)  }
+  .mi{ /* Literal.Number.Integer */
+    color: var(--base0e)  }
+  .mo{ /* Literal.Number.Oct */
+    color: var(--base0e)  }
+  .n{ /* Name */
+    color: var(--base07)  }
+  .na{ /* Name.Attribute */
+    color: var(--base0c)  }
+  .nb{ /* Name.Builtin */
+    color: var(--base0c)  }
+  .nc{ /* Name.Class */
+    color: var(--base07)  }
+  .no{ /* Name.Constant */
+    color: var(--base07)  }
+  .nd{ /* Name.Decorator */
+    color: var(--base0f)  }
+  .ni{ /* Name.Entity */
+    color: var(--base07)  }
+  .ne{ /* Name.Exception */
+    color: var(--base0c)  }
+  .nf{ /* Name.Function */
+    color: var(--base0b)  }
+  .nl{ /* Name.Label */
+    color: var(--base0c)  }
+  .nn{ /* Name.Namespace */
+    color: var(--base07)  }
+  .nt{ /* Name.Tag */
+    color: var(--base08)  }
+  .nv{ /* Name.Variable */
+    color: var(--base0c)  }
+  .nx{ /* Name.Other */
+    color: var(--base07)  }
+  .o{ /* Operator */
+    color: var(--base08)  }
+  .ow{ /* Operator.Word */
+    color: var(--base0d)  }
+  .p{ /* Punctuation */
+    color: var(--base05)  }
+  .pi{ /* Name.Property */
+    color: var(--base07)  }
+  .py{ /* Name.Property */
+    color: var(--base0d)  }
+  .s{ /* Literal.String */
+    color: var(--base0a)  }
+  .sa{ /* Literal.String.raw */
+    color: var(--base0a)  }
+  .sb{ /* Literal.String.Backtick */
+    color: var(--base0a)  }
+  .sc{ /* Literal.String.Char */
+    color: var(--base07)  }
+  .sd{ /* Literal.String.Doc */
+    color: var(--base04)  }
+  .s2{ /* Literal.String.Double */
+    color: var(--base0a)  }
+  .se{ /* Literal.String.Escape */
+    color: var(--base0e)  }
+  .sh{ /* Literal.String.Heredoc */
+    color: var(--base0a)  }
+  .si{ /* Literal.String.Interpol */
+    color: var(--base0e)  }
+  .sx{ /* Literal.String.Other */
+    color: var(--base0a)  }
+  .sr{ /* Literal.String.Regex */
+    color: var(--base0a)  }
+  .s1{ /* Literal.String.Single */
+    color: var(--base0a)  }
+  .ss{ /* Literal.String.Symbol */
+    color: var(--base0a)  }
+  .vc{ /* Name.Variable.Class */
+    color: var(--base0c)  }
+  .vg{ /* Name.Variable.Global */
+    color: var(--base0c)  }
+  .vi{ /* Name.Variable.Instance */
+    color: var(--base0c)  }
+  .w{ /* Text.Whitespace */
+    color: var(--base07)  }
+}
+
+// Fix Github syntax display
+.gist .blob-num {
+  width: 3.5% !important;
+}
+
+.gist {
+  th, td {
+    border-bottom: 0;
+  }
+}
+
+// For correct line number width in Github Gists
+.gist table tbody tr td {
+  box-sizing: content-box;
+}
+
+// Fix nbconvert dataframe
+.dataframe tbody {
+  font-size: 0.8em;
+  border-color: white;
+
+  tr {
+    :nth-child(even) {
+      background-color: #f8f8f8;
+    }
+
+    th {
+      border-top: 0;
+      border-left: 0;
+      border-bottom: 0;
+    }
+
+
+    td {
+      padding: 0;
+      border: 0;
+      text-align: center;
+    }
+  }
+
+
+}
+
+.dataframe thead tr {
+  :nth-child(n+2) {
+    color: black;
+    //width: 100px;
+
+    font-size: 0.75em;
+    text-align: center !important;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  :first-child {
+    border-top: 0;
+    border-left: 0;
+  }
+
+}
+
+table.dataframe {
+  border: 0 solid var(--border);
+  border-collapse: collapse;
+}

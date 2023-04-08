@@ -1,14 +1,15 @@
-title: Hamilton
-description: A minimal and beautiful Jekyll theme best for writing and note-taking.
-author: Shangzhi Huang
+title: 쩐다
+description: 미니멀리즘 쩔어
+author: 아몰라
 avatar: /logo.png
-email: ngzhio@gmail.com
-
+email: htmsejong@gmail.com
+skin: Daylight
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-theme-hamilton
 
 paginate: 10
 
@@ -30,14 +31,14 @@ exclude:
 # Jekyll SEO Tag (Optional)
 # =========================
 twitter:
-  username: ngzhio
+  username: xxx
   card: summary
 logo: logo.png
 social:
-  name: Shangzhi Huang
+  name: 업떠
   links:
     - https://twitter.com/ngzhio
     - https://www.facebook.com/ngzhio
     - https://github.com/ngzhio
 google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
-lang: en
+lang: ko

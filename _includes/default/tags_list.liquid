@@ -1,0 +1,21 @@
+{% assign tags = include.tags | split:'|' | sort | uniq %}
+
+{% if tags.size > 0 %}
+  <div class="tag-list">
+    <ul>
+      {% if tags.size == 1 %}
+        <li class="meta">Tag</li>
+      {% else %}
+        <li class="meta">Tags</li>
+      {% endif %}
+
+      {% for tag in tags %}
+        <li><a class="button" href="{% unless 'Tags' == page.title %}{{ site.baseurl }}/tags{% endunless %}#{{ tag | cgi_escape }}">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> {{ tag }}</p>
+        </a></li>
+      {% endfor %}
+    </ul>
+  </div>
+{% else %}
+  <div class="tag-list"></div>
+{% endif %}
